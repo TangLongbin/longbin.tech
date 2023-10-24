@@ -11,7 +11,7 @@ lang: "zh-Hans"
 
 ## 关于我
 
-&emsp;&emsp;我是一名来自xx大学的博士生。。。。。。
+&emsp;&emsp;A student in HITSZ & NUSRI
 
 ## 论文发表
 
