@@ -1,7 +1,7 @@
 ---
 layout: page
-home-title: H2O-ac theme for Jekyll
-description: 基于可能是最好看的 Jekyll 主题 H2O 的学术版主题
+home-title: Tang's Personal Tech-Blog
+description: Academic Blog Based on Jekyll-theme-H2O-ac
 permalink: /en/index.html
 langs: ["zh-Hans", "en"]
 lang: "en"
