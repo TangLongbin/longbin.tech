@@ -21,3 +21,6 @@ lang: "zh-Hans"
 ## 联系我
 
 邮箱：1982917081@qq.com (请使用@替换[at])
+GitHub Pages: https://tanglongbin.github.io
+Vercel: https://tanglongbin.vercel.app
+Netlify: https://tanglongbin.netlify.app

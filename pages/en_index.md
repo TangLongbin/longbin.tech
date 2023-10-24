@@ -20,4 +20,7 @@ lang: "en"
 
 ## Contact
 
-Email: zhonger[at]live.cn (Please replace [at] with @.)
+Email: 1982917081@qq.com (Please replace [at] with @.)
+GitHub Pages: https://tanglongbin.github.io
+Vercel: https://tanglongbin.vercel.app
+Netlify: https://tanglongbin.netlify.app
