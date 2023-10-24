@@ -11,7 +11,7 @@ lang: "zh-Hans"
 
 ## 关于我
 
-&emsp;&emsp;A student in HITSZ & NUSRI
+&emsp;&emsp;一名在哈尔滨工业大学（深圳） & 新加坡国立大学（苏州）研究院的学生。
 
 ## 论文发表
 
@@ -20,4 +20,4 @@ lang: "zh-Hans"
 
 ## 联系我
 
-邮箱：zhonger[at]live.cn (请使用@替换[at])
+邮箱：1982917081@qq.com (请使用@替换[at])

@@ -11,7 +11,7 @@ lang: "en"
 
 ## About me
 
-&emsp;&emsp;I am a PhD student from xxx University.....
+&emsp;&emsp;A student in HITSZ & NUSRI.
 
 ## Publications
 
