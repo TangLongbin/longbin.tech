@@ -248,7 +248,7 @@ $$
 
 ### Methods of Computing $e^{At}$
 
-- $$e^{At} = \sum_{k = 0}^{\infin} \frac{A^kt^k}{k!}$$
+- $$e^{At} = \sum_{k = 0}^{\infty} \frac{A^kt^k}{k!}$$
 - $$e^{At} = \mathcal{L}^{-1}[(sI - A)^{-1}]$$
 - $$e^{At} = Qe^{\Lambda t}Q^{-1}$$
 
@@ -267,7 +267,7 @@ $$
 
 After the transformation, eigenvalues **don't change**.
 
-### S.S. to T.F.
+### State Space to Transfer Function
 
 $$
 G(s) = C(sI - A)^{-1}B + D
@@ -330,13 +330,13 @@ $$
 ### BIBO Stability
 
 $$
-|u(t)| \leq k_1 < \infin, \forall t \ge 0, |y(t)| \leq k_2 < \infin
+|u(t)| \leq k_1 < \infty, \forall t \ge 0, |y(t)| \leq k_2 < \infty
 $$
 
 A SISO system is stable, if and only if:
 
 $$
-\int_0^\infin |g(t)|dt \leq k < \infin
+\int_0^\infty |g(t)|dt \leq k < \infty
 $$
 
 The T.F. of a SISO system is $G(s)$.  
@@ -381,7 +381,7 @@ $$
 The system is stable, if and only if:
 
 $$
-\forall Q > 0, \exist P > 0
+\forall Q > 0, \exists P > 0
 $$
 
 Usually let **$Q = I$**, then solve the equation. The system is stable, **if P > 0**.
@@ -659,7 +659,7 @@ $$
 ### Z Transform
 
 $$
-F(z) = \sum_{k=0}^\infin f(kh)z^{-k} \\
+F(z) = \sum_{k=0}^\infty f(kh)z^{-k} \\
 f(kh) = \frac{1}{2\pi i}\int F(z)z^{k-1}dz
 $$
 
