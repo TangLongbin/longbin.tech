@@ -540,11 +540,11 @@ $$
 
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
-- Find $det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$
+- Find $$det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$$
 - Compute $T$ that transforms $(A,B)$ to CCF
-- Compute $\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$
-- Compute $\bar{k} = [(\alpha_n - \hat{\alpha_n}), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]$
-- $k = \bar{k}T$
+- Compute $$\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$$
+- Compute $$\bar{k} = [(\alpha_n - \hat{\alpha}_n), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]$$
+- $$k = \bar{k}T$$
 
 ### Luenberger Linear Observer
 
@@ -562,11 +562,11 @@ $$
 
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
-- Find $det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$
+- Find $$det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$$
 - Compute $Q$ that transforms $(A,B)$ to OCF
-- Compute $\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$
-- Compute $\bar{L} = [(\hat{\alpha_n} - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T$
-- $L = Q\bar{L}$
+- Compute $$\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$$
+- Compute $$\bar{L} = [(\hat{\alpha}_n - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T$$
+- $$L = Q\bar{L}$$
 
 ### Combination of State Feedback and Observer
 
