@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: "Tang's Blog"
 description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
-keyword: 'zhonger，zhonger的博客，nodejs，kvm, 机器学习'
+keyword: 'Tang Longbin, Tang's Blog, Automation, Control Theory, Linux'
 url: 'https://tanglongbin.github.io' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -50,12 +50,12 @@ favicon: "/favicon.ico"
 
 # Footer
 footer:
-  since: 2015
+  since: 2023
 
 # Author 配置博主信息
 author: 'Tang Longbin'
 nickname: 'Tang Longbin'
-bio: '在大学生，热爱折腾，理想是做一名机器人全栈工程师'
+bio: '在校大学生，热爱折腾，理想是做一名机器人全栈工程师'
 avatar: '/assets/img/profile.webp'
 
 # Search
@@ -71,7 +71,7 @@ comments:
   waline: false
   waline_url: 'https://h2o-ac-waline.vercel.app'
 
-# MathJax 公式支持 by Ray-Eldath
+# MathJax 公式支持
 mathjax: true
 
 # Share

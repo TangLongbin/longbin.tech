@@ -180,20 +180,14 @@ $$
 ### State Space Representation
 
 $$
-\dot{x}(t) = A(t)x(t) + B(t)u(t)
-$$
-
-$$
+\dot{x}(t) = A(t)x(t) + B(t)u(t) \\
 y(t) = C(t)x(t) + D(t)u(t)
 $$
 
 When $A(t),B(t),C(t),D(t)$ are constants, the equations describe an **LTI system**:
 
 $$
-\dot{x}(t) = Ax(t) + Bu(t)
-$$
-
-$$
+\dot{x}(t) = Ax(t) + Bu(t) \\
 y(t) = Cx(t) + Du(t)
 $$
 
@@ -237,17 +231,15 @@ Resistor: 电阻
 - Diagonal: 对角阵
   - $$\Lambda$$
 - Caley-Hamilton Theorem
-  - $$del(\lambda I - A) = \lambda^n + a_1 \lambda^{n-1} + \dots + a_n = 0 \implies A^n + a_1 A^{n-1} + \dots + a_n I = 0$$
+  - $$del(\lambda I - A) = \lambda^n + a_1 \lambda^{n-1} + \dots + a_n = 0 \\
+    \implies A^n + a_1 A^{n-1} + \dots + a_n I = 0$$
 
 ## Chapter 3 -- State Space
 
 ### Introduction
 
 $$
-\dot{x} = Ax + Bu
-$$
-
-$$
+\dot{x} = Ax + Bu \\
 y = Cx + Du
 $$
 
