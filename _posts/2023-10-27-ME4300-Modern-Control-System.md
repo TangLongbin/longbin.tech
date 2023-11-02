@@ -63,10 +63,10 @@ $$
 
 ### Other definitions
 
-- Proper Transfer Function: $n \geq m$ (i.e. $G(s) = Constant_{t->\infty}$)
+- Proper Transfer Function: $n \geq m$ (i.e. $G(s) = Constant\vert_{t->\infty}$)
 
 ### Time Response of System
-
+ 
 #### Typical Signal
 
 - Step
@@ -93,7 +93,7 @@ $$
 
 ### Stability of System
 
-$f(t)$ is bounded if there is an M s.t. $|f(t)| < M < \infty$
+$f(t)$ is bounded if there is an M s.t. $\lvert f(t) \rvert < M < \infty$
 
 > Definition:  
 > A system is Bounded-Input Bounded-Ouput(BIBO) stable if whenever the input signal is bounded, so is the output signal.
@@ -549,7 +549,7 @@ $$
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
 - Find $det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$
-- Compute $T$ that transforms $\braket{A,B}$ to CCF
+- Compute $T$ that transforms $(A,B)$ to CCF
 - Compute $\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$
 - Compute $\bar{k} = [(\alpha_n - \hat{\alpha}_n), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]$
 - $k = \bar{k}T$
@@ -571,7 +571,7 @@ $$
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
 - Find $det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$
-- Compute $Q$ that transforms $\braket{A,B}$ to OCF
+- Compute $Q$ that transforms $(A,B)$ to OCF
 - Compute $\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$
 - Compute $\bar{L} = [(\hat{\alpha}_n - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T$
 - $L = Q\bar{L}$
