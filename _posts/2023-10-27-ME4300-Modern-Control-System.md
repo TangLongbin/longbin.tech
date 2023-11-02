@@ -27,6 +27,7 @@ tags:
 $$
 S^T_G = \frac{\Delta T}{\Delta G}
 $$
+
 Where **T** is the **transfer function** (Combination of controlled system, controller and feedback), and **G** is the **controlled system**.
 
 #### Advantages of close loop control
@@ -62,7 +63,7 @@ $$
 
 ### Other definitions
 
-- Proper Transfer Function: $n \geq m$ (i.e. $G(s) = constant|_{t->\infty}$)
+- Proper Transfer Function: $n \geq m$ (i.e. $G(s) = Constant_{t->\infty}$)
 
 ### Time Response of System
 
@@ -93,6 +94,7 @@ $$
 ### Stability of System
 
 $f(t)$ is bounded if there is an M s.t. $|f(t)| < M < \infty$
+
 > Definition:  
 > A system is Bounded-Input Bounded-Ouput(BIBO) stable if whenever the input signal is bounded, so is the output signal.
 
@@ -110,14 +112,27 @@ $$
 |$s^{n-2}$|$b_0$|$b_1$|$b_2$|$b_3$|
 |...|...|...|...|...|
 
-$$b_0 = \frac{a_1a_2 - a_0a_3}{a_1}$$
-$$b_1 = \frac{a_1a_4 - a_0a_5}{a_1}$$
-$$...$$
+$$
+b_0 = \frac{a_1a_2 - a_0a_3}{a_1}
+$$
+
+$$
+b_1 = \frac{a_1a_4 - a_0a_5}{a_1}
+$$
+
+$$
+...
+$$
 
 ### Frequency Response
 
-$$\frac{|Y(j\omega)|}{|U(j\omega)|} = |G(j\omega)|$$
-$$\phi = \angle G(j\omega)$$
+$$
+\frac{|Y(j\omega)|}{|U(j\omega)|} = |G(j\omega)|
+$$
+
+$$
+\phi = \angle G(j\omega)
+$$
 
 ## Chapter 1 -- Introduction
 
@@ -167,14 +182,17 @@ $$
 $$
 \dot{x}(t) = A(t)x(t) + B(t)u(t)
 $$
+
 $$
 y(t) = C(t)x(t) + D(t)u(t)
 $$
 
 When $A(t),B(t),C(t),D(t)$ are constants, the equations describe an **LTI system**:
+
 $$
 \dot{x}(t) = Ax(t) + Bu(t)
 $$
+
 $$
 y(t) = Cx(t) + Du(t)
 $$
@@ -219,15 +237,17 @@ Resistor: 电阻
 - Diagonal: 对角阵
   - $$\Lambda$$
 - Caley-Hamilton Theorem
-  - $$del(\lambda I - A) = \lambda^n + a_1 \lambda^{n-1} + \dots + a_n = 0 \\
-    \implies A^n + a_1 A^{n-1} + \dots + a_n I = 0$$
+  - $$del(\lambda I - A) = \lambda^n + a_1 \lambda^{n-1} + \dots + a_n = 0 \implies A^n + a_1 A^{n-1} + \dots + a_n I = 0$$
 
 ## Chapter 3 -- State Space
 
 ### Introduction
 
 $$
-\dot{x} = Ax + Bu \\
+\dot{x} = Ax + Bu
+$$
+
+$$
 y = Cx + Du
 $$
 
