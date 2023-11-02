@@ -197,7 +197,7 @@ Resistor: 电阻
 
 ## Chapter 2 -- Review of Linear Algebra
 
-### **Words** in Linear Algebra
+### Words in Linear Algebra
 
 - Basis: 基
 - orthogonal: 正交
@@ -543,7 +543,7 @@ $$
 - Find $det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$
 - Compute $T$ that transforms $(A,B)$ to CCF
 - Compute $\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$
-- Compute $\bar{k} = [(\alpha_n - \hat{\alpha}_n), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]$
+- Compute $\bar{k} = [(\alpha_n - \hat{\alpha_n}), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]$
 - $k = \bar{k}T$
 
 ### Luenberger Linear Observer
@@ -565,7 +565,7 @@ $$
 - Find $det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$
 - Compute $Q$ that transforms $(A,B)$ to OCF
 - Compute $\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$
-- Compute $\bar{L} = [(\hat{\alpha}_n - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T$
+- Compute $\bar{L} = [(\hat{\alpha_n} - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T$
 - $L = Q\bar{L}$
 
 ### Combination of State Feedback and Observer
@@ -656,6 +656,7 @@ $$
 
 Same as the Continuous-Time State Space  
 One Simplification:  
+
 $$
 \Psi = \int_0^h e^{At}dt \\
 \varPhi = I + A \Psi, \Gamma = \Psi B
