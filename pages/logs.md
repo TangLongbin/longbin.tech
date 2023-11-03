@@ -1,6 +1,6 @@
 ---
 layout: page
-home-title: Welcome to zhonger's blog!
+home-title: Welcome to Tang's blog!
 description: Writing, writing, writing ...
 cover: 'https://images.unsplash.com/photo-1630824869986-a5b2f513b1f4'
 cover_author: 'Eean Chen'
@@ -91,8 +91,6 @@ permalink: /logs.html
 
 | 托管方 | 支持访问域名 | IPv4 | IPv6 | 备注 |
 | ---- | ---- | ---- | ---- |
-| Netlify | [h2o-ac.lisz.me](https://h2o-ac.lisz.me) | 是 | 是 | 全球性节点 |
-| Github | [h2o-ac.lisz.ink](https://h2o-ac.lisz.ink) | 是 | 否 | 美国节点 |
-| Cloudflare| [h2o-ac.pages.dev](https://h2o-ac.pages.dev) | 是 | 是 | 全球性节点 |
-| Vercel | [h2o-ac.vercel.app](https://h2o-ac.vercel.app) | 是 | 否 | 美国节点 |
-| Azure | [h2o-ac.lui.site](https://h2o-ac.lui.site) | 是 | 否 | 国内香港节点 |
+| Netlify | [tanglongbin.netlify.app](https://tanglongbin.netlify.app) | 是 | 是 | 全球性节点 |
+| Github | [tanglongbin.github.io](https://tanglongbin.github.i) | 是 | 否 | 美国节点 |
+| Vercel | [tanglongbin.vercel.app](https://tanglongbin.vercel.app) | 是 | 否 | 美国节点 |

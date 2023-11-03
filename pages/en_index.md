@@ -20,7 +20,7 @@ lang: "en"
 
 ## Contact
 
-- Email: 1982917081@qq.com
-- GitHub Pages: https://tanglongbin.github.io
-- Vercel: https://tanglongbin.vercel.app
-- Netlify: https://tanglongbin.netlify.app
+- Email: <1982917081@qq.com>
+- GitHub Pages: <https://tanglongbin.github.io>
+- Vercel: <https://tanglongbin.vercel.app>
+- Netlify: <https://tanglongbin.netlify.app>
