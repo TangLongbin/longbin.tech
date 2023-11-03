@@ -215,7 +215,7 @@ while Ture:
     格式:
     ![图片地址无效显示的文本](图片地址 "可选标题")
 
-!["图片失效"](https://avatars.githubusercontent.com/u/73875400?v=4 "PNG")
+![](https://avatars.githubusercontent.com/u/73875400?v=4 "PNG")
 
 ### 表格
 
