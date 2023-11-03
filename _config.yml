@@ -1,6 +1,6 @@
 # Site settings 配置站点
 title: "Tang's Blog"
-description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
+description: '个人技术博客，记录所学的一切知识。'
 keyword: "Tang Longbin, Tang's Blog, Automation, Control Theory, Linux"
 url: 'https://tanglongbin.github.io' # your host
 
@@ -56,7 +56,7 @@ footer:
 author: 'Tang Longbin'
 nickname: 'Tang Longbin'
 bio: '在校大学生，热爱折腾，理想是做一名机器人全栈工程师'
-avatar: '/assets/img/profile.webp'
+avatar: '/assets/img/profile.png'
 
 # Search
 search: true
@@ -96,7 +96,7 @@ sns:
 
 # Links 友情链接
 links:
-  'Mr Li': 'https://lisz.me'
+  'HITSZ Open Auto': 'https://hitsz-auto.github.io'
 
 # Beian 备案号
 beian: '沪ICP备xxxxxxxx号'
@@ -172,3 +172,9 @@ notbyAI: true
 # Alive time
 alivetime: true
 alivestart: "10/24/2023"
+
+# Github
+github:
+  enabled: true
+  owner: tanglongbin
+  repository: tanglongbin.github.io
