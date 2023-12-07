@@ -9,7 +9,6 @@ cover_author_link: 'https://unsplash.com/@idoevolve'
 tags: 
 - jekyll
 ---
-
 > Transform your plain text into static websites and blogs.
 
 ### Welcome

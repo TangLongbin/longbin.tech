@@ -1,13 +1,15 @@
 ---
 layout: post
-title: 'EES4710/ME4300 Modern Control System'
+title: EES4710/ME4300 Modern Control System
 date: 2023-10-27
 author: Tang Longbin
-cover: '/assets/img/Modern Control System.png'
-cover_author: 'Tang Longbin'
-cover_author_link: 'https://tanglongbin.github.io'
-tags: 
-- Modern Control System
+cover: /assets/img/Modern Control System.png
+cover_author: Tang Longbin
+cover_author_link: https://tanglongbin.github.io
+tags:
+  - Modern
+  - Control
+  - System
 ---
 
 # EES4710/ME4300 Modern Control System
