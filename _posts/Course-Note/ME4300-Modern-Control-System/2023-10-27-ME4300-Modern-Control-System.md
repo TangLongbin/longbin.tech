@@ -3,9 +3,9 @@ layout: post
 title: EES4710/ME4300 Modern Control System
 date: 2023-10-27
 author: Tang Longbin
-cover: image/Modern-Control-System.png
-cover_author: Tang Longbin
-cover_author_link: https://longbin.tech
+cover: https://upload.wikimedia.org/wikipedia/commons/6/66/Typical_State_Space_model_with_feedback_and_input.png
+cover_author: WikiPedia
+cover_author_link: https://en.wikipedia.org/wiki/State-space_representation
 tags:
   - Modern Control
 ---
@@ -15,7 +15,7 @@ tags:
 > Prof. Ong Chong Lin
 > Email: <mpeongcj@nus.edu.sg>
 > Tel: 6516-2217
-> Editor: Tang Longbin ([https://tanglongbin.github.io](https://tanglongbin.github.io))
+> Editor: [Longbin](https://longbin.tech)
 
 ## Chapter 0 -- Review of Basic Control System
 
@@ -42,15 +42,15 @@ $$
 
 #### Transfer Function
 
-- Input 
+- Input
   $$
   r(t): R(s)
   $$
-- Output 
+- Output
   $$
   c(t): C(s)
   $$
-- System 
+- System
   $$
   G(s) = \frac{C(s)}{R(s)}
   $$
@@ -594,16 +594,16 @@ $$
 
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
-- Find 
+- Find
   $$
   det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n
   $$
 - Compute $T$ that transforms $(A,B)$ to CCF
-- Compute 
+- Compute
   $$
   \Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n
   $$
-- Compute 
+- Compute
   $$
   \bar{k} = [(\alpha_n - \hat{\alpha}_n), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]
   $$
@@ -627,16 +627,16 @@ $$
 
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
-- Find 
+- Find
   $$
   det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n
   $$
 - Compute $Q$ that transforms $(A,B)$ to OCF
-- Compute 
+- Compute
   $$
   \Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n
   $$
-- Compute 
+- Compute
   $$
   \bar{L} = [(\hat{\alpha}_n - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T
   $$
