@@ -3,22 +3,19 @@ layout: post
 title: EES4710/ME4300 Modern Control System
 date: 2023-10-27
 author: Tang Longbin
-cover: /assets/img/Modern Control System.png
+cover: image/Modern-Control-System.png
 cover_author: Tang Longbin
-cover_author_link: https://tanglongbin.github.io
+cover_author_link: https://longbin.tech
 tags:
-  - Modern
-  - Control
-  - System
+  - Modern Control
 ---
-
 # EES4710/ME4300 Modern Control System
 
-> National University of Singapore(Suzhou) Research Institute  
-> Prof. Ong Chong Lin  
-> Email: <mpeongcj@nus.edu.sg>  
-> Tel: 6516-2217  
-> Editor: Tang Longbin (<https://tanglongbin.github.io>)
+> National University of Singapore(Suzhou) Research Institute
+> Prof. Ong Chong Lin
+> Email: <mpeongcj@nus.edu.sg>
+> Tel: 6516-2217
+> Editor: Tang Longbin ([https://tanglongbin.github.io](https://tanglongbin.github.io))
 
 ## Chapter 0 -- Review of Basic Control System
 
@@ -45,9 +42,18 @@ $$
 
 #### Transfer Function
 
-- Input $$r(t): R(s)$$
-- Output $$c(t): C(s)$$
-- System $$G(s) = \frac{C(s)}{R(s)}$$
+- Input 
+  $$
+  r(t): R(s)
+  $$
+- Output 
+  $$
+  c(t): C(s)
+  $$
+- System 
+  $$
+  G(s) = \frac{C(s)}{R(s)}
+  $$
 
 #### Mathematical Modeling
 
@@ -68,7 +74,7 @@ $$
 - Proper Transfer Function: $n \geq m$ (i.e. $G(s) = Constant\vert_{t->\infty}$)
 
 ### Time Response of System
- 
+
 #### Typical Signal
 
 - Step
@@ -97,7 +103,7 @@ $$
 
 $f(t)$ is bounded if there is an M s.t. $\lvert f(t) \rvert < M < \infty$
 
-> Definition:  
+> Definition:
 > A system is Bounded-Input Bounded-Ouput(BIBO) stable if whenever the input signal is bounded, so is the output signal.
 
 BIBO System: All poles are in the left-half s-panel.
@@ -108,11 +114,11 @@ $$
 a_0s^n + a_1s^{n-1} + ... + a_n = 0
 $$
 
-|$s^n$|$a_0$|$a_2$|$a_4$|$a_6$|
-|:-:|:-:|:-:|:-:|:-:|
-|$s^{n-1}$|$a_1$|$a_3$|$a_5$|$a_7$|
-|$s^{n-2}$|$b_0$|$b_1$|$b_2$|$b_3$|
-|...|...|...|...|...|
+|   $s^n$   | $a_0$ | $a_2$ | $a_4$ | $a_6$ |
+| :---------: | :-----: | :-----: | :-----: | :-----: |
+| $s^{n-1}$ | $a_1$ | $a_3$ | $a_5$ | $a_7$ |
+| $s^{n-2}$ | $b_0$ | $b_1$ | $b_2$ | $b_3$ |
+|     ...     |   ...   |   ...   |   ...   |   ...   |
 
 $$
 b_0 = \frac{a_1a_2 - a_0a_3}{a_1}
@@ -140,7 +146,7 @@ $$
 
 ### Problem with classical control
 
-Transfer function has its limitations.  
+Transfer function has its limitations.
 It can not describe the internel behavior of a system, which is more complicated than external behavior.
 
 ### Mathematical Description
@@ -165,7 +171,7 @@ It can not describe the internel behavior of a system, which is more complicated
 
 #### Lumpedness
 
-Lumped system:  
+Lumped system:
 finite state variables or finite state vector
 
 ### Linear System
@@ -203,38 +209,66 @@ Resistor: 电阻
 
 - Basis: 基
 - orthogonal: 正交
-  - $$\alpha^T * \beta = 0$$
+  - $$
+    \alpha^T * \beta = 0
+    $$
 - orthonormal: 单位正交
 - Domain: 定义域
 - Range: 值域
 - Rank: 秩
-  - $$R(A) = r$$
+  - $$
+    R(A) = r
+    $$
 - Full Rank: 满秩
-  - $$R(A_{n \times n}) = n$$
+  - $$
+    R(A_{n \times n}) = n
+    $$
 - Non-Singular: 非奇异
 - Determinant: 行列式
-  - $$det(A) = |A|$$
+  - $$
+    det(A) = |A|
+    $$
 - Minor: 余子式
-  - $$M_{ij}$$
+  - $$
+    M_{ij}
+    $$
 - Co-Minor: 代数余子式
-  - $$C_{ij} = (-1)^{i+j} * M_{ij}$$
+  - $$
+    C_{ij} = (-1)^{i+j} * M_{ij}
+    $$
 - Adjugate matrix: 伴随矩阵
-  - $$A^*$$
+  - $$
+    A^*
+    $$
 - Transpose: 转置
-  - $$A^T$$
+  - $$
+    A^T
+    $$
 - Inverse: 逆
-  - $$A^{-1}$$
+  - $$
+    A^{-1}
+    $$
 - Eigenvalues: 特征值
-  - $$det(\lambda I - A) = 0$$
+  - $$
+    det(\lambda I - A) = 0
+    $$
 - Eigenvector: 特征向量
-  - $$Ax = \lambda x$$
+  - $$
+    Ax = \lambda x
+    $$
 - Similarity Transformation: 相似变换（相似矩阵）
-  - $$\bar{A} = Q^{-1}AQ$$
+  - $$
+    \bar{A} = Q^{-1}AQ
+    $$
 - Diagonal: 对角阵
-  - $$\Lambda$$
+  - $$
+    \Lambda
+    $$
 - Caley-Hamilton Theorem
-  - $$del(\lambda I - A) = \lambda^n + a_1 \lambda^{n-1} + \dots + a_n = 0 \\
-    \implies A^n + a_1 A^{n-1} + \dots + a_n I = 0$$
+  - $$
+    del(\lambda I - A) = \lambda^n + a_1 \lambda^{n-1} + \dots + a_n = 0 \\
+    \implies A^n + a_1 A^{n-1} + \dots + a_n I = 0
+    $$
 
 ## Chapter 3 -- State Space
 
@@ -253,18 +287,36 @@ $$
 
 ### Properties of $e^{At}$
 
-- $$\frac{d}{dt}e^{At} = Ae^{At} = e^{At}A$$
-- $$e^{At} = \mathcal {L}^{-1}[(sI - A)^{-1}]$$
-- $$e^{At_1}e^{At_2} = e^{A(t_1+t_2)}$$
-- $$e^{At}e^{-At} = I$$
-- $$[e^{At}]^T = e^{A^Tt}$$
-- $$e^{At}e^{Bt} = e^{(A+B)t} \space \text{if and only if} \space AB = BA$$
+- $$
+  \frac{d}{dt}e^{At} = Ae^{At} = e^{At}A
+  $$
+- $$
+  e^{At} = \mathcal {L}^{-1}[(sI - A)^{-1}]
+  $$
+- $$
+  e^{At_1}e^{At_2} = e^{A(t_1+t_2)}
+  $$
+- $$
+  e^{At}e^{-At} = I
+  $$
+- $$
+  [e^{At}]^T = e^{A^Tt}
+  $$
+- $$
+  e^{At}e^{Bt} = e^{(A+B)t} \space \text{if and only if} \space AB = BA
+  $$
 
 ### Methods of Computing $e^{At}$
 
-- $$e^{At} = \sum_{k = 0}^{\infty} \frac{A^kt^k}{k!}$$
-- $$e^{At} = \mathcal{L}^{-1}[(sI - A)^{-1}]$$
-- $$e^{At} = Qe^{\Lambda t}Q^{-1}$$
+- $$
+  e^{At} = \sum_{k = 0}^{\infty} \frac{A^kt^k}{k!}
+  $$
+- $$
+  e^{At} = \mathcal{L}^{-1}[(sI - A)^{-1}]
+  $$
+- $$
+  e^{At} = Qe^{\Lambda t}Q^{-1}
+  $$
 
 ### Full Solution
 
@@ -353,7 +405,7 @@ $$
 \int_0^\infty |g(t)|dt \leq k < \infty
 $$
 
-The T.F. of a SISO system is $G(s)$.  
+The T.F. of a SISO system is $G(s)$.
 It's stable, if and only if all the **poles** of $G(s)$ are in the **open left-half s-plane**.
 
 ### Internal Stability
@@ -542,11 +594,22 @@ $$
 
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
-- Find $$det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$$
+- Find 
+  $$
+  det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n
+  $$
 - Compute $T$ that transforms $(A,B)$ to CCF
-- Compute $$\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$$
-- Compute $$\bar{k} = [(\alpha_n - \hat{\alpha}_n), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]$$
-- $$k = \bar{k}T$$
+- Compute 
+  $$
+  \Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n
+  $$
+- Compute 
+  $$
+  \bar{k} = [(\alpha_n - \hat{\alpha}_n), (\alpha_{n-1} - \hat{\alpha}_{n-1}), \dots, (\alpha_1 - \hat{\alpha}_1)]
+  $$
+- $$
+  k = \bar{k}T
+  $$
 
 ### Luenberger Linear Observer
 
@@ -564,11 +627,22 @@ $$
 
 **Steps of the solution (desired eigenvalues: $\hat{\lambda}_i$):**
 
-- Find $$det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n$$
+- Find 
+  $$
+  det(sI - A) = s^n + \alpha_1s^{n-1} + \dots + \alpha_n
+  $$
 - Compute $Q$ that transforms $(A,B)$ to OCF
-- Compute $$\Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n$$
-- Compute $$\bar{L} = [(\hat{\alpha}_n - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T$$
-- $$L = Q\bar{L}$$
+- Compute 
+  $$
+  \Pi_{i=1}^n(s - \hat{\lambda}_i) = s^n + \hat{\alpha}_1s^{n-1} + \dots + \hat{\alpha}_n
+  $$
+- Compute 
+  $$
+  \bar{L} = [(\hat{\alpha}_n - \alpha_n), (\hat{\alpha}_{n-1} - \alpha_{n-1}), \dots, (\hat{\alpha}_1 - \alpha_1)]^T
+  $$
+- $$
+  L = Q\bar{L}
+  $$
 
 ### Combination of State Feedback and Observer
 
@@ -656,8 +730,8 @@ $$
 
 ### Computation of $\Phi$ and $\Gamma$
 
-Same as the Continuous-Time State Space  
-One Simplification:  
+Same as the Continuous-Time State Space
+One Simplification:
 
 $$
 \Psi = \int_0^h e^{At}dt \\

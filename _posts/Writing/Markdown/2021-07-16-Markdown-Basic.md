@@ -3,20 +3,21 @@ layout: post
 title: 'Markdown Basic Knowledge'
 date: 2021-07-16
 author: Tang Longbin
-cover: '/assets/img/markdown.png'
+cover: 'image/markdown.png'
 cover_author: 'Tang Longbin'
-cover_author_link: 'https://tanglongbin.github.io'
+cover_author_link: 'https://longbin.tech'
 tags: 
 - Markdown
 ---
-
 # Markdown
 
 2021.07.16
 By TangLongbin
 
 > Reference
+>
 >> [写文神器, 3分钟学会Markdown标记语言](https://www.bilibili.com/video/BV1NA411j71W "Bilibili")
+>>
 
 ---
 
@@ -25,7 +26,7 @@ By TangLongbin
 * Markdown是一种轻量级的标记语言,它允许人们使用易读已写的纯文本格式编写文档。
 * Markdown编写的文档可以导出HTML、Word、图像、PDF、Epub等多种格式的文档。
 * Markdown的语法简洁明了、学习容易、而且功能比纯文本更强，因此很多人用它写博客。
-* Markdown编写的文档后缀为`.md`或`.markdown`。
+* Markdown编写的文档后缀为 `.md`或 `.markdown`。
 
 ---
 
@@ -118,7 +119,7 @@ By TangLongbin
 > ### 引用块
 
     在 > 后接空格
-    
+
     > 一级引用
 
     也可以多层嵌套
@@ -151,7 +152,7 @@ By TangLongbin
 #### 嵌套列表
 
     可将有序列表和无序列表任意组合使用，形成嵌套列表，注意每次嵌套必须使用四个空格或一个Tab缩进
-    
+
     1. 第一项
        1. 第一项嵌套的第一项
        2. 第一项嵌套的第二项
@@ -165,9 +166,9 @@ By TangLongbin
 
     <> 内包裹链接
 
-    <https://www.bilibili.com>
+    [https://www.bilibili.com](https://www.bilibili.com)
 
-<https://www.bilibili.com>
+[https://www.bilibili.com](https://www.bilibili.com)
 
 #### 带标题的链接
 
@@ -180,7 +181,7 @@ By TangLongbin
 #### 普通链接
 
     []包裹文字，()包裹链接
-    
+
     [哔哩哔哩动画](https://www.bilibili.com)
 
 [哔哩哔哩动画](https://www.bilibili.com)
@@ -200,10 +201,7 @@ By TangLongbin
     三个反引号包裹
     并可在第一行的反引号后加上语言名来实现语法高亮
 
-    ```python
-    while Ture:
-        print(Hello World!)
-    ```
+    ``python     while Ture:         print(Hello World!)     ``
 
 ```python
 while Ture:
@@ -212,8 +210,7 @@ while Ture:
 
 ### 图片
 
-    格式:
-    ![图片地址无效显示的文本](图片地址 "可选标题")
+    格式:![图片地址无效显示的文本](图片地址 "可选标题")
 
 ![](https://avatars.githubusercontent.com/u/73875400?v=4 "PNG")
 
@@ -223,15 +220,15 @@ while Ture:
 
     Markdown制造表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行
 
-    |表头|表头|表头|
-    |----|----|----|
-    |单元格|单元格|单元格|
-    |单元格|单元格|单元格|
+| 表头   | 表头   | 表头   |
+| ------ | ------ | ------ |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
 
-|表头|表头|表头|
-|----|----|----|
-|单元格|单元格|单元格|
-|单元格|单元格|单元格|
+| 表头   | 表头   | 表头   |
+| ------ | ------ | ------ |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
 
 #### 对齐方式
 
@@ -239,10 +236,10 @@ while Ture:
     :- 左对齐
     :-:居中对齐
 
-    |左对齐|居中对齐|右对齐|
-    |:-----|:-----:|-----:|
-    |我在左边|我在中间|我在右边|
+| 左对齐   | 居中对齐 |   右对齐 |
+| :------- | :------: | -------: |
+| 我在左边 | 我在中间 | 我在右边 |
 
-|左对齐|居中对齐|右对齐|
-|:-----|:-----:|-----:|
-|我在左边|我在中间|我在右边|
+| 左对齐   | 居中对齐 |   右对齐 |
+| :------- | :------: | -------: |
+| 我在左边 | 我在中间 | 我在右边 |
