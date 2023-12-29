@@ -1,6 +1,8 @@
 ---
 layout: post
 title: IMU Fusion Algorithm -- Magdwick
+subtitle: 「IMU 数据融合」Magdwick 算法简介
+category: Fusion Algorithms
 date: 2023-12-19
 author: Longbin
 cover: https://x-io.co.uk/wp-content/themes/x-io_theme-v1_8/assets/images/x-io-header-logo.png
@@ -11,7 +13,6 @@ tags:
   - Sensor Fusion
   - Magdwick
 ---
-# 「IMU 数据融合」Magdwick 算法简介
 
 Magdwick 是一种常用的 IMU 传感器数据融合算法，其利用「加速度计」与「磁力计」作为反馈来修正「陀螺仪」，使得「IMU」解算出更准确的姿态。
 
@@ -67,8 +68,8 @@ $$
 这里给出中国华南、华东地区的参考范围：
 
 - 磁场强度：$[45 \mu T, 50 \mu T]$
-- 磁倾角：$[30 \degree, 50 \degree]$
-- 磁偏角：$[-2 \degree, -6 \degree]$
+- 磁倾角：$[30^\circ, 50^\circ]$
+- 磁偏角：$[-2^\circ, -6^\circ]$
 
 可以看到，磁场强度 $\vec{m}$ 的方向大致为「指向北极、偏向地面」，可以根据此特点来判断磁力计自身三个轴的方向，确保与 "IMU" 坐标系相同
 
