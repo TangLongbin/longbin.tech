@@ -2,7 +2,7 @@
 layout: post
 title: EES4710/ME4300 Modern Control System
 subtitle: EES4710/ME4300 Modern Control System Course Note
-category: Course-Note
+category: Course Note
 date: 2023-10-27
 author: Longbin
 cover: https://upload.wikimedia.org/wikipedia/commons/6/66/Typical_State_Space_model_with_feedback_and_input.png
