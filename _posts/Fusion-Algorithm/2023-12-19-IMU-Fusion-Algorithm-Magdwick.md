@@ -2,7 +2,7 @@
 layout: post
 title: IMU Fusion Algorithm -- Magdwick
 subtitle: 「IMU 数据融合」Magdwick 算法简介
-category: Fusion-Algorithm
+category: Fusion Algorithm
 date: 2023-12-19
 author: Longbin
 cover: https://x-io.co.uk/wp-content/themes/x-io_theme-v1_8/assets/images/x-io-header-logo.png
