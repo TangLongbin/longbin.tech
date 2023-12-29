@@ -22,20 +22,20 @@ default_lang: "zh-Hans"
 # PWA
 pwa:
   color: '#81BBFF'
-  short_name: 'lisz'
+  short_name: 'Longbin'
 
 # Navigation links
 nav:
   home: '/'
   blog: '/blog/index.html'
   archives: '/archives.html'
-  tags: '/tags.html'
+  links: '/links.html'
   about:   
+    tags: '/tags.html'
     logs: '/logs.html'
     tos: '/tos.html'
     RSS: '/feed.xml'
     CV: '/cv.html'
-    links: '/links.html'
 
 # Gray for the whole site 全站灰色
 gray: false
@@ -66,8 +66,8 @@ nightMode: false
 
 # Comments 评论功能
 comments:
-  disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  disqus: true
+  disqus_url: 'https://longbin.disqus.com/embed.js'
   waline: false
   waline_url: 'https://h2o-ac-waline.vercel.app'
 

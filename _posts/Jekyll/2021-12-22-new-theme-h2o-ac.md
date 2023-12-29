@@ -3,7 +3,7 @@ layout: post
 title: 'H2O-ac theme for Jekyll'
 subtitle: '基于或许是最漂亮的 Jekyll 主题 H2O 的学术版'
 date: 2021-12-22 19:50:00 +0800
-categories: tech
+categories: Jekyll
 author: zhonger
 cover: 'https://i.lisz.top/cover/ao6Hd2.webp'
 cover_author: 'Paris Hour'
@@ -20,7 +20,6 @@ tags:
 - 运维
 pin: true
 ---
-
 ## 前言
 
 &emsp;&emsp;正如大家所知，Jekyll 是一款高可定制的、非常流行的静态博客生成工具。围绕着 Jekyll 也衍生出了很多优秀的 Jekyll 主题， 由 [廖柯宇](https://github.com/kaeyleo) 开发的 [H2O](https://github.com/kaeyleo/jekyll-theme-H2O) 主题就是其中之一。极简主义、风格扁平化、卡片式布局、Medium 及知乎专栏的视觉风格等等特点，为我们带来了或许是迄今为止最漂亮的 Jekyll 主题。
@@ -406,17 +405,17 @@ umami:
 
 &emsp;&emsp;H2O 主题中使用了 Gulp + ~~Node-Sass~~ Sass 的方案来自动化前端构建工作流。不得不说，这个方案还是很不错的，只是随着 Gulp 和 ~~Node-Sass~~ Sass 版本的更新，对 NodeJS 环境及其他依赖库都有一些要求。这里，H2O-ac 主题在 package.json 文件中将所有库都更新到目前最新，对应版本列表如下所示。另外，为了减少一些第三方 CSS 样式的请求数，利用自动构建工作流将固定的第三方 CSS 样式文件合并并压缩为 plugins.min.css 文件。app.min.css 仍为多个自编写 CSS 样式文件的合并压缩。
 
-| 运行环境或依赖库 | 版本号 |
-| :--: | :--: |
-| NodeJS | v17.0.0 |
-| gulp | v4.0.2 |
-| gulp-clean-css | v4.3.0 |
-| gulp-rename | v20.0 |
-| gulp-sass | v5.0.0 |
-| gulp-uglify | v3.0.2 |
-| gulp-concat | v2.6.1 |
-| ~~node-sass~~ | ~~v7.0.0~~ |
-| sass | v1.51.0 |
+| 运行环境或依赖库 |   版本号   |
+| :--------------: | :---------: |
+|      NodeJS      |   v17.0.0   |
+|       gulp       |   v4.0.2   |
+|  gulp-clean-css  |   v4.3.0   |
+|   gulp-rename   |    v20.0    |
+|    gulp-sass    |   v5.0.0   |
+|   gulp-uglify   |   v3.0.2   |
+|   gulp-concat   |   v2.6.1   |
+|  ~~node-sass~~  | ~~v7.0.0~~ |
+|       sass       |   v1.51.0   |
 
 ## 使用方法
 
