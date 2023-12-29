@@ -1,24 +1,15 @@
 ---
 layout: post
 title: 'Markdown Basic Knowledge'
+subtitle: 'Markdown 基础知识'
+categories: 'Writing'
 date: 2021-07-16
-author: Tang Longbin
-cover: 'image/markdown.png'
-cover_author: 'Tang Longbin'
-cover_author_link: 'https://longbin.tech'
+author: Longbin
+cover: https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/350px-Markdown-mark.svg.png
+cover_author: WikiPedia
+cover_author_link: https://en.wikipedia.org/wiki/Markdown
 tags: 
 - Markdown
----
-# Markdown
-
-2021.07.16
-By TangLongbin
-
-> Reference
->
->> [写文神器, 3分钟学会Markdown标记语言](https://www.bilibili.com/video/BV1NA411j71W "Bilibili")
->>
-
 ---
 
 ## Markdown简介
@@ -27,8 +18,6 @@ By TangLongbin
 * Markdown编写的文档可以导出HTML、Word、图像、PDF、Epub等多种格式的文档。
 * Markdown的语法简洁明了、学习容易、而且功能比纯文本更强，因此很多人用它写博客。
 * Markdown编写的文档后缀为 `.md`或 `.markdown`。
-
----
 
 ## Markdown语法
 
@@ -192,7 +181,7 @@ By TangLongbin
 
     单个反引号包裹
 
-    `print("Hello World!")`
+    \`print("Hello World!")\`
 
 `print("Hello World!")`
 
@@ -201,7 +190,10 @@ By TangLongbin
     三个反引号包裹
     并可在第一行的反引号后加上语言名来实现语法高亮
 
-    ``python     while Ture:         print(Hello World!)     ``
+    \`\`\`python
+    while Ture:
+    print(Hello World!)
+    \`\`\`
 
 ```python
 while Ture:
@@ -212,7 +204,7 @@ while Ture:
 
     格式:![图片地址无效显示的文本](图片地址 "可选标题")
 
-![](https://avatars.githubusercontent.com/u/73875400?v=4 "PNG")
+![ ](https://avatars.githubusercontent.com/u/73875400?v=4 "PNG")
 
 ### 表格
 

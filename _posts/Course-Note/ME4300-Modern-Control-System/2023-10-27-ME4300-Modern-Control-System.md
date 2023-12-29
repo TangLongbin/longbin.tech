@@ -9,13 +9,13 @@ cover_author_link: https://en.wikipedia.org/wiki/State-space_representation
 tags:
   - Modern Control
 ---
-# EES4710/ME4300 Modern Control System
+# EES4710/ME4300 Modern Control System Course Note
 
-> National University of Singapore(Suzhou) Research Institute
-> Prof. Ong Chong Lin
-> Email: <mpeongcj@nus.edu.sg>
-> Tel: 6516-2217
-> Editor: [Longbin](https://longbin.tech)
+> National University of Singapore(Suzhou) Research Institute  
+> Prof. Ong Chong Lin  
+> Email: <mpeongcj@nus.edu.sg>  
+> Tel: 6516-2217  
+> Editor: [Longbin](https://longbin.tech)  
 
 ## Chapter 0 -- Review of Basic Control System
 
