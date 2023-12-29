@@ -29,12 +29,13 @@ navigation:
   home: '/'
   blog: '/blog/index.html'
   archives: '/archives.html'
-  tags: '/tags.html'
   links: '/links.html'
-  logs: '/logs.html'
-  tos: '/tos.html'
-  RSS: '/feed.xml'
-  CV: '/cv.html'
+  more:
+    tags: '/tags.html'
+    logs: '/logs.html'
+    tos: '/tos.html'
+    RSS: '/feed.xml'
+    CV: '/cv.html'
 
 # Gray for the whole site 全站灰色
 gray: false
