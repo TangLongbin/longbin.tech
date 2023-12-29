@@ -25,7 +25,7 @@ pwa:
   short_name: 'Longbin'
 
 # Navigation links
-nav:
+navigation:
   home: '/'
   blog: '/blog/index.html'
   archives: '/archives.html'
