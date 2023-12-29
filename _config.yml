@@ -30,8 +30,8 @@ nav:
   blog: '/blog/index.html'
   archives: '/archives.html'
   links: '/links.html'
-  about:   
-    tags: '/tags.html'
+  about:
+  	tags: '/tags.html'
     logs: '/logs.html'
     tos: '/tos.html'
     RSS: '/feed.xml'

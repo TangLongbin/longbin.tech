@@ -2,7 +2,7 @@
 layout: post
 title: IMU Fusion Algorithm -- Magdwick
 subtitle: 「IMU 数据融合」Magdwick 算法简介
-category: Fusion Algorithms
+category: Fusion-Algorithm
 date: 2023-12-19
 author: Longbin
 cover: https://x-io.co.uk/wp-content/themes/x-io_theme-v1_8/assets/images/x-io-header-logo.png
@@ -13,7 +13,6 @@ tags:
   - Sensor Fusion
   - Magdwick
 ---
-
 Magdwick 是一种常用的 IMU 传感器数据融合算法，其利用「加速度计」与「磁力计」作为反馈来修正「陀螺仪」，使得「IMU」解算出更准确的姿态。
 
 ## 第一步：认识 IMU

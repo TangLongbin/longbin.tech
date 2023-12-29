@@ -2,7 +2,7 @@
 layout: post
 title: 'Markdown Basic Knowledge'
 subtitle: 'Markdown 基础知识'
-categories: 'Writing'
+categories: Writing
 date: 2021-07-16
 author: Longbin
 cover: https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/350px-Markdown-mark.svg.png
@@ -11,7 +11,6 @@ cover_author_link: https://en.wikipedia.org/wiki/Markdown
 tags: 
 - Markdown
 ---
-
 ## Markdown简介
 
 * Markdown是一种轻量级的标记语言,它允许人们使用易读已写的纯文本格式编写文档。

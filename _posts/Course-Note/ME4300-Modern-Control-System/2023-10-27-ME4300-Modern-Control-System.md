@@ -2,7 +2,7 @@
 layout: post
 title: EES4710/ME4300 Modern Control System
 subtitle: EES4710/ME4300 Modern Control System Course Note
-category: Course Notes
+category: Course-Note
 date: 2023-10-27
 author: Tang Longbin
 cover: https://upload.wikimedia.org/wikipedia/commons/6/66/Typical_State_Space_model_with_feedback_and_input.png
@@ -11,12 +11,11 @@ cover_author_link: https://en.wikipedia.org/wiki/State-space_representation
 tags:
   - Modern Control
 ---
-
-> National University of Singapore(Suzhou) Research Institute  
-> Prof. Ong Chong Lin  
-> Email: <mpeongcj@nus.edu.sg>  
-> Tel: 6516-2217  
-> Editor: [Longbin](https://longbin.tech)  
+> National University of Singapore(Suzhou) Research Institute
+> Prof. Ong Chong Lin
+> Email: <mpeongcj@nus.edu.sg>
+> Tel: 6516-2217
+> Editor: [Longbin](https://longbin.tech)
 
 ## Chapter 0 -- Review of Basic Control System
 
@@ -116,10 +115,10 @@ a_0s^n + a_1s^{n-1} + ... + a_n = 0
 $$
 
 |   $s^n$   | $a_0$ | $a_2$ | $a_4$ | $a_6$ |
-| :-: | :-: | :-: | :-: | :-: |
+| :---------: | :-----: | :-----: | :-----: | :-----: |
 | $s^{n-1}$ | $a_1$ | $a_3$ | $a_5$ | $a_7$ |
 | $s^{n-2}$ | $b_0$ | $b_1$ | $b_2$ | $b_3$ |
-|   ...   |   ...   |   ...   |   ...   |   ...   |
+|     ...     |   ...   |   ...   |   ...   |   ...   |
 
 $$
 b_0 = \frac{a_1a_2 - a_0a_3}{a_1}
