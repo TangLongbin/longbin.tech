@@ -171,7 +171,7 @@ $$
 
 大致流程图如下：
 
-```mermaid
+```mermaid2
 flowchart TD
     Calibration --> Initialization
     Initialization --> Measurement --> |Acc & Mag| AHRS
@@ -228,9 +228,9 @@ $$
 
 - $i_c$ is the calibrated inertial measurement and `return` value
 - $i_u$ is the uncalibrated inertial measurement and `uncalibrated` argument
-- M is the misalignment matrix and `misalignment` argument
-- s is the sensitivity diagonal matrix and `sensitivity` argument
-- b is the offset vector and `offset` argument
+- $M$ is the misalignment matrix and `misalignment` argument
+- $s$ is the sensitivity diagonal matrix and `sensitivity` argument
+- $b$ is the offset vector and `offset` argument
 
 #### Magnetic calibration
 
@@ -242,8 +242,8 @@ $$
 
 - $m_c$ is the calibrated magnetometer measurement and `return` value
 - $m_u$ is the uncalibrated magnetometer measurement and `uncalibrated` argument
-- S is the soft iron matrix and `softIronMatrix` argument
-- h is the hard iron offset vector and `hardIronOffset` argument
+- $S$ is the soft iron matrix and `softIronMatrix` argument
+- $h$ is the hard iron offset vector and `hardIronOffset` argument
 
 ### Initialization
 
@@ -691,4 +691,4 @@ int main() {
 
 Magdwicks 算法使用了「反馈」的思想来实现「数据融合」，思路巧妙，值得深入学习
 
-同时，IMU 作为当今机器人控制「必不可少」的传感器之一，掌握「IMIU」的原理与使用非常重要
+同时，IMU 作为当今机器人控制「必不可少」的传感器之一，掌握「IMU」的原理与使用非常重要
