@@ -11,13 +11,13 @@ cover_author_link: https://git-scm.com
 tags:
   - Git
 ---
-> HITsz VEX 南工麟云 程序组
-> Version 1.0.0 (2022/09/18)
-> By TangLongbin
-> 推荐教程：
->> [Git教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
->> [Git 5分钟教程](https://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)
->> [Github 简明教程](https://www.runoob.com/w3cnote/git-guide.html)
+> HITsz VEX 南工麟云 程序组  
+> Version 1.0.0 (2022/09/18)  
+> By Longbin  
+> 推荐教程：  
+>> [Git教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html)  
+>> [Git 5分钟教程](https://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)  
+>> [Github 简明教程](https://www.runoob.com/w3cnote/git-guide.html)  
 
 ## 引入
 
@@ -34,6 +34,7 @@ tags:
 
 你打开了 Word 非常高率地完成了第一版方案，并将其发送了客户查看。
 
+![Project Version-1.0.0](./Images/ProjectVersion-1.0.0.png "Project Version-1.0.0")
 ![Project Version-1.0.0](./Images/ProjectVersion-1.0.0.png "Project Version-1.0.0")
 
 可是世事无常，大肠包小肠。客户并不满意，并要求你改方案，一周后天交给他。
