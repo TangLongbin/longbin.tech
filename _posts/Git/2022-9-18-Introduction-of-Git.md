@@ -12,14 +12,10 @@ tags:
   - Git
 ---
 
-> HITsz VEX 南工麟云 程序组
->
-> Version 1.0.0 (2022/09/18)
->
-> By Longbin
->
-> 推荐教程
->
+> HITsz VEX 南工麟云 程序组  
+> Version 1.0.0 (2022/09/18)  
+> By Longbin  
+> 推荐教程  
 >> [Git教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html)  
 >> [Git 5分钟教程](https://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)  
 >> [Github 简明教程](https://www.runoob.com/w3cnote/git-guide.html)  
