@@ -5,16 +5,21 @@ subtitle: Git 分布式版本控制系统
 category: Git
 date: 2022-9-18
 author: Longbin
-cover: assets/img/Git/git-status.png
+cover: /assets/img/Git/git-status.png
 cover_author: Git
 cover_author_link: https://git-scm.com
 tags:
   - Git
 ---
 
-> HITsz VEX 南工麟云 程序组  
-> Version 1.0.0 (2022/09/18)  
-> By Longbin推荐教程：  
+> HITsz VEX 南工麟云 程序组
+>
+> Version 1.0.0 (2022/09/18)
+>
+> By Longbin
+>
+> 推荐教程
+>
 >> [Git教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html)  
 >> [Git 5分钟教程](https://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)  
 >> [Github 简明教程](https://www.runoob.com/w3cnote/git-guide.html)  
@@ -34,8 +39,8 @@ tags:
 
 你打开了 Word 非常高率地完成了第一版方案，并将其发送了客户查看。
 
-![Project Version-1.0.0](assets/img/Git/ProjectVersion-1.0.0.png)
-![Project Version-1.0.0](assets/img/Git/ProjectVersion-1.0.0.png)
+![Project Version-1.0.0](/assets/img/Git/ProjectVersion-1.0.0.png)
+![Project Version-1.0.0](/assets/img/Git/ProjectVersion-1.0.0.png)
 
 可是世事无常，大肠包小肠。客户并不满意，并要求你改方案，一周后天交给他。
 
