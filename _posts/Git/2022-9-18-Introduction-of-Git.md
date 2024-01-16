@@ -155,7 +155,7 @@ Git 工作流程：
 
 输入 ``git init`` 初始化仓库，此时工程目录会创建一个 ``.git`` 隐藏文件夹，并且工程路径后会跟随产生 ``master`` 标识，代表目前为 ``master`` 分支（主分支）
 
-![Git Init](/assets/img/Git/GitInit.png")
+![Git Init](/assets/img/Git/GitInit.png)
 
 此时，Git 仓库初始化完成
 
