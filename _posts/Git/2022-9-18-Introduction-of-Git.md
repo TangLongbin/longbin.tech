@@ -36,7 +36,6 @@ tags:
 你打开了 Word 非常高率地完成了第一版方案，并将其发送了客户查看。
 
 ![Project Version-1.0.0](/assets/img/Git/ProjectVersion-1.0.0.png)
-![Project Version-1.0.0](/assets/img/Git/ProjectVersion-1.0.0.png)
 
 可是世事无常，大肠包小肠。客户并不满意，并要求你改方案，一周后天交给他。
 
