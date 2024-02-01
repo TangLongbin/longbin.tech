@@ -1,39 +1,31 @@
 - lang: "zh"
-  name: "诸葛亮"
-  motivation: "云平台开发工程师"
-  photo: "/assets/img/h3.webp"
-  email: "zhuge@live.cn"
-  github: "zhuge"
-  linkedin: "zhuge"
-  website: "https://zhuge.me"
+  name: "唐隆斌"
+  # motivation: "无人驾驶规控/感知工程师"
+  photo: "/assets/img/longbin_portrait.jpg"
+  email: "200320721@stu.hit.edu.cn"
+  github: "tanglongbin"
+  linkedin: "tanglongbin"
+  website: "https://longbin.tech"
   languages:
-    - idiom: "普通话"
-    - idiom: "闽南语"
+    - idiom: "中文"
+    - idiom: "英语(IELTS 6.5)"
   educations:
-    - degree: "本科-计算机科学与技术"
-      university: "卧龙大学"
-      time: "2012-2016"
-    - degree: "研究生-计算机科学与技术"
-      university: "卧龙大学"
-      time: "2016-2019"
-    - degree: "博士-计算机科学与技术"
-      university: "卧龙大学"
-      time: "2019-至今"
+    - degree: "本科-自动化"
+      university: "哈尔滨工业大学（深圳）"
+      time: "2020-2024"
+    - degree: "联合培养-电子计算机工程"
+      university: "新加坡国立大学（苏州）研究院"
+      time: "2023-2024"
   skills:
     - title: "后端技能"
       skill: 
-        - GO
+        - C/C++
         - Python
-        - PHP
-        - NodeJS
-    - title: "前端技能"
+    - title: "机器人相关技能"
       skill: 
-        - HTML/CSS/JS
-        - VueJS
-    - title: "运维开发技能"
-      skill: 
-        - Docker
-        - KVM
+        - ROS/ROS2
+        - SLAM
+        - OpenCV
   experience:
     - role: "三国鼎立之论"
       company: "科研方向"
@@ -59,6 +51,8 @@
     - "<b>诸葛亮</b>, 关羽, 张飞, 赵云, 刘备*. 《七出岐山的必要性》. 三国志快报, 2021(1):110-118."
     - "<b>诸葛亮</b>, 周瑜, 关羽, 黄盖, 鲁肃, 孙权*, 刘备*. 《吴蜀联盟为什么行》. 三国志简报, 2020(1):110-118."
     - "<b>诸葛亮</b>, 周瑜, 荀彧, 曹操*, 孙权*, 刘备*. 《三个国家的浪漫史》. 三国志综述, 2022(1):110-118."
+  patents:
+    - "专利（一）"
   introduction:
     - title: "研究内容"
       content: "研究生期间主要从事三国鼎立的研究，在本人的帮助下发展了吴蜀联盟 <sup>[2]</sup>；在后期针对魏国的强大作出了七出岐山的决定 <sup>[1]</sup>；与三国主要负责人合作完成了《三个国家的浪漫史》 <sup>[3]</sup>。"
