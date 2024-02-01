@@ -32,7 +32,7 @@
         <header>
             <h1 class="title">{{ cv.name }}</h1>
             {% if cv.motivation %}
-            <h3 class="motivation"><span class="mtitle">{% if cv.lang == "zh" %}目标岗位：{% else %} Job: {% endif %}</span>{{ cv.motivation }}</h3>
+            <h3 class="motivation"><span class="mtitle">{% if cv.lang == "zh" %}理想岗位：{% else %} Job: {% endif %}</span>{{ cv.motivation }}</h3>
             {% endif %}
             <div class="labels">
                 <input type="checkbox" id="switch" name="mode" class="toggle-dark">
@@ -156,9 +156,9 @@
                 {% if cv.patents %}
                 <section class="patents">
                     <div class="title">{% if cv.lang == "zh" %}专利成果{% else %}Patents{% endif %}</div>
-                    <ol class="patents-item">
+                    <ol class="publications-item"">
                         {% for p in cv.patents %}
-                        <li class="patent">{{ p }}</li>
+                        <li class="publication">{{ p }}</li>
                         {% endfor %}
                     </ol>
                 </section>
