@@ -36,22 +36,23 @@
       - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
       time: "2023.10 - 至今"
-      details: "自主设计并制作一辆小型无人车，实现园区（例如学校、公园）内的自主导航与无人配送。无人车底盘采用“两橡胶轮-四全向轮”的六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。自动驾驶采用 Autoware.universe 架构，利用“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习方法实现更适合园区复杂三维路面环境的局部路径规划。
+      details: "自主设计并制作一辆小型无人车，实现园区（例如学校、公园）内的自主导航与无人配送。无人车底盘采用“两橡胶轮-四全向轮”的六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。自动驾驶采用 Autoware.universe 架构，利用“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习方法实现更适合园区复杂三维路面环境的局部路径规划。"
+      tech: "技术：SLAM，ROS2，Sensor-Fusion，C/C++，Python，LQR/MPC，SolidWorks，Deep-Reinforcement Learning"
+    - role: "Word Representation Based on N-Gram and Skip-Gram"
+      company: "帝国理工学院"
+      time: "2022.7 - 2022.8"
+      details: "借助 N-Gram 与 Skip-Gram(with negative sampling) 两种方法分析 2020~2022 年间与 Covid-19 有关的 500K 篇论文，利用有限维数对内容进行语义表达，并将相似度较高的 tokens 进行分类、可视化，获得 Covid-19 与 SARS-CoV-2 等冠状病毒的相似特性。"
       tech: "技术：NLP，Python，BPE，N-Gram，Skip-Gram"
     - role: "哈尔滨工业大学（深圳）大一年度项目"
       company: "自动泊车（优秀项目）"
       time: "2021.1 - 2021.12"
       details: "利用低成本传感器实现车位测量与车辆相对位姿估计，车辆运动时，利用超声波距离传感器对停车位进行测量，对测量结果进行积分获得车位信息并同时定位车辆的相对位姿，实时解算泊车路径实现不同类型泊车。"
       tech: "技术：Python，Linux，PID，总线通信"
-    - role: "Word Representation Based on N-Gram and Skip-Gram"
-      company: "帝国理工学院"
-      time: "2022.7 - 2022.8"
-      details: "借助 N-Gram 与 Skip-Gram(with negative sampling) 两种方法分析 2020~2022 年间与 Covid-19 有关的 500K 篇论文，利用有限维数对内容进行语义表达，并将相似度较高的 tokens 进行分类、可视化，获得 Covid-19 与 SARS-CoV-2 等冠状病毒的相似特性。"
-      tech: "技术：NLP，Python，BPE，N-Gram，Skip-Gram"
   honors:
     - 2021 ACM-ICPC Shaanxi National Invitational 银牌
     - 2021 哈尔滨工业大学（深圳）程序设计大赛 二等奖
-    - 2020~2022 哈尔滨工业大学（深圳）学业奖学金 优秀模范学生
+    - 2021~2023 哈尔滨工业大学（深圳）学业奖学金
+    - 2022 哈尔滨工业大学（深圳）优秀模范学生
     - 2022 中国机器人及人工智能大赛 一等奖
     - 2022 VEX 亚洲机器人锦标赛（大学组） 冠军
     - 2022 BOTEC 国际智能机器人技术挑战赛 二等奖
