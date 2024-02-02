@@ -33,7 +33,7 @@
         - SolidWorks
         - AutoCAD
   experience:
-      - role: "Autonomous Vehicle for mail and parcel delivery"
+    - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
       time: "2023.10 - 至今"
       details: "自主设计并制作一辆小型无人车，实现园区（例如学校、公园）内的自主导航与无人配送。无人车底盘采用“两橡胶轮-四全向轮”的六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。自动驾驶采用 Autoware.universe 架构，利用“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习方法实现更适合园区复杂三维路面环境的局部路径规划。"
