@@ -36,8 +36,8 @@
     - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
       time: "2023.10 - 至今"
-      details: "自主设计并制作一辆小型无人车，实现园区（例如学校、公园）内的自主导航与无人配送。底盘采用六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。采用 Autoware.universe 架构，“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习实现更适合园区复杂三维路面的局部路径规划。"
-      tech: "技术：SLAM，ROS2，C/C++，Python，LQR/MPC，SolidWorks，Reinforcement Learning"
+      details: "设计一辆能够在园区（例如学校、公园）内的自主导航与配送的无人车。底盘采用六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。采用 Autoware.universe 架构，“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习实现更适合园区复杂三维路面的局部路径规划。"
+      tech: "技术：SLAM，ROS2，C/C++，Python，LQR/MPC，Reinforcement Learning"
     - role: "Word Representation Based on N-Gram and Skip-Gram"
       company: "帝国理工学院"
       time: "2022.7 - 2022.8"
@@ -53,8 +53,8 @@
     - 2021 哈尔滨工业大学（深圳）程序设计大赛 二等奖
     - 2021~2023 哈尔滨工业大学（深圳）学业奖学金 优秀模范学生
     - 2022 VEXU 亚洲机器人锦标赛 冠军
-    - 2022 中国机器人及人工智能大赛 一等奖
     - 2022 BOTEC 国际智能机器人技术挑战赛 二等奖
+    - 2022 中国机器人及人工智能大赛 一等奖
     - 2023 中国高校智能机器人创意大赛 二等奖
   # publications:
   #   - "<b>诸葛亮</b>, 关羽, 张飞, 赵云, 刘备*. 《七出岐山的必要性》. 三国志快报, 2021(1):110-118."
