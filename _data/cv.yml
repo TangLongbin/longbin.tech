@@ -32,22 +32,23 @@
       skill:
         - SolidWorks
         - AutoCAD
+        - Bambu Studio
   experience:
     - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
       time: "2023.10 - 至今"
       details: "设计一辆能够在园区（例如学校、公园）内的自主导航与配送的无人车。底盘采用六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。采用 Autoware.universe 架构，“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习实现更适合园区复杂三维路面的局部路径规划。"
       tech: "技术：SLAM，ROS2，C/C++，Python，LQR/MPC，Reinforcement Learning"
-    - role: "Word Representation Based on N-Gram and Skip-Gram"
-      company: "帝国理工学院"
-      time: "2022.7 - 2022.8"
-      details: "借助 N-Gram 与 Skip-Gram(with negative sampling) 两种方法分析 2020~2022 年间与 Covid-19 有关的 500K 篇论文，在有限维数下对内容进行语义表达，并将相似度较高的 tokens 进行分类、可视化，获得 Covid-19 与 SARS-CoV-2 等冠状病毒的相似特性。"
-      tech: "技术：NLP，Python，BPE，N-Gram，Skip-Gram"
     - role: "基于双目视觉的药物配送无人车"
       company: "哈尔滨工业大学（深圳）"
       time: "2022.9 - 2022.12"
       details: "在室内场景下的药品种类识别与无人配送。利用双目摄像头感知环境，提取车道特征并识别 landmark，实现无人车在配送过程中的位姿估计。同时，根据摄像头检测的药品种类，自动确定配送终点，并完成药物的无人配送与返航。"
       tech: "技术：Python，C/C++，ROS，OpenCV，目标检测"
+    - role: "Word Representation Based on N-Gram and Skip-Gram"
+      company: "帝国理工学院"
+      time: "2022.7 - 2022.8"
+      details: "借助 N-Gram 与 Skip-Gram(with negative sampling) 两种方法分析 2020~2022 年间与 Covid-19 有关的 500K 篇论文，在有限维数下对内容进行语义表达，并将相似度较高的 tokens 进行分类、可视化，获得 Covid-19 与 SARS-CoV-2 等冠状病毒的相似特性。"
+      tech: "技术：NLP，Python，BPE，N-Gram，Skip-Gram"
     - role: "自动泊车小车（优秀项目）"
       company: "哈尔滨工业大学（深圳）"
       time: "2021.1 - 2021.12"
@@ -67,11 +68,11 @@
   #   - "<b>诸葛亮</b>, 周瑜, 荀彧, 曹操*, 孙权*, 刘备*. 《三个国家的浪漫史》. 三国志综述, 2022(1):110-118."
   patents:
     - "<b>唐隆斌</b>, 王锐, 何铭, 刘能峰, 一种差分舵轮及小车, 公开号 CN117104334A"
-  introduction:
-    - title: "知识/技能面"
-      content: "研究生期间主要从事三国鼎立的研究，在本人的帮助下发展了吴蜀联盟 <sup>[2]</sup>；在后期针对魏国的强大作出了七出岐山的决定 <sup>[1]</sup>；与三国主要负责人合作完成了《三个国家的浪漫史》 <sup>[3]</sup>。"
-    - title: "竞赛/项目经历"
-      content: "蜀汉建立的元老，为蜀国的发展和强大贡献了力量。（以上内容均为展示效果填充需要，内容请勿当真！！！）"
+  # introduction:
+  #   - title: "知识/技能面"
+  #     content: "研究生期间主要从事三国鼎立的研究，在本人的帮助下发展了吴蜀联盟 <sup>[2]</sup>；在后期针对魏国的强大作出了七出岐山的决定 <sup>[1]</sup>；与三国主要负责人合作完成了《三个国家的浪漫史》 <sup>[3]</sup>。"
+  #   - title: "竞赛/项目经历"
+  #     content: "蜀汉建立的元老，为蜀国的发展和强大贡献了力量。（以上内容均为展示效果填充需要，内容请勿当真！！！）"
 - lang: "en"
   name: "Zhuge Liang"
   motivation: "Cloud Computing Developer"
