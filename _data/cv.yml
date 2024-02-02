@@ -37,7 +37,10 @@
       skill:
         - 自动/现代控制理论
         - 信号分析与处理
-        - 数据结构
+        - 数据结构与算法
+        - 数字图像处理/机器视觉
+        - 数字/模电电子技术基础
+        - 工程制图/机械设计基础
   experience:
     - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
