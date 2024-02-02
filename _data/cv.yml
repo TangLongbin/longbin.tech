@@ -36,12 +36,12 @@
     - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
       time: "2023.10 - 至今"
-      details: "自主设计并制作一辆小型无人车，实现园区（例如学校、公园）内的自主导航与无人配送。无人车底盘采用“两橡胶轮-四全向轮”的六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。自动驾驶采用 Autoware.universe 架构，利用“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习方法实现更适合园区复杂三维路面环境的局部路径规划。"
-      tech: "技术：SLAM，ROS2，Sensor-Fusion，C/C++，Python，LQR/MPC，SolidWorks，Deep-Reinforcement Learning"
+      details: "自主设计并制作一辆小型无人车，实现园区（例如学校、公园）内的自主导航与无人配送。底盘采用六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。采用 Autoware.universe 架构，“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习实现更适合园区复杂三维路面的局部路径规划。"
+      tech: "技术：SLAM，ROS2，C/C++，Python，LQR/MPC，SolidWorks，Reinforcement Learning"
     - role: "Word Representation Based on N-Gram and Skip-Gram"
       company: "帝国理工学院"
       time: "2022.7 - 2022.8"
-      details: "借助 N-Gram 与 Skip-Gram(with negative sampling) 两种方法分析 2020~2022 年间与 Covid-19 有关的 500K 篇论文，利用有限维数对内容进行语义表达，并将相似度较高的 tokens 进行分类、可视化，获得 Covid-19 与 SARS-CoV-2 等冠状病毒的相似特性。"
+      details: "借助 N-Gram 与 Skip-Gram(with negative sampling) 两种方法分析 2020~2022 年间与 Covid-19 有关的 500K 篇论文，在有限维数下对内容进行语义表达，并将相似度较高的 tokens 进行分类、可视化，获得 Covid-19 与 SARS-CoV-2 等冠状病毒的相似特性。"
       tech: "技术：NLP，Python，BPE，N-Gram，Skip-Gram"
     - role: "哈尔滨工业大学（深圳）大一年度项目"
       company: "自动泊车（优秀项目）"
@@ -51,10 +51,9 @@
   honors:
     - 2021 ACM-ICPC Shaanxi National Invitational 银牌
     - 2021 哈尔滨工业大学（深圳）程序设计大赛 二等奖
-    - 2021~2023 哈尔滨工业大学（深圳）学业奖学金
-    - 2022 哈尔滨工业大学（深圳）优秀模范学生
+    - 2021~2023 哈尔滨工业大学（深圳）学业奖学金 优秀模范学生
+    - 2022 VEXU 亚洲机器人锦标赛 冠军
     - 2022 中国机器人及人工智能大赛 一等奖
-    - 2022 VEX 亚洲机器人锦标赛（大学组） 冠军
     - 2022 BOTEC 国际智能机器人技术挑战赛 二等奖
     - 2023 中国高校智能机器人创意大赛 二等奖
   # publications:
@@ -64,9 +63,9 @@
   patents:
     - "<b>唐隆斌</b>, 王锐, 何铭, 刘能峰, 一种差分舵轮及小车, 公开号 CN117104334A"
   introduction:
-    - title: "研究内容"
+    - title: "知识/技能面"
       content: "研究生期间主要从事三国鼎立的研究，在本人的帮助下发展了吴蜀联盟 <sup>[2]</sup>；在后期针对魏国的强大作出了七出岐山的决定 <sup>[1]</sup>；与三国主要负责人合作完成了《三个国家的浪漫史》 <sup>[3]</sup>。"
-    - title: "开发平台"
+    - title: "竞赛/项目经历"
       content: "蜀汉建立的元老，为蜀国的发展和强大贡献了力量。（以上内容均为展示效果填充需要，内容请勿当真！！！）"
 - lang: "en"
   name: "Zhuge Liang"

@@ -165,7 +165,7 @@
                 {% endif %}
                 {% if cv.introduction %}
                 <section class="introduction">
-                    <div class="title">{% if cv.lang == "zh" %}研究简介{% else %}Introduction{% endif %}</div>
+                    <div class="title">{% if cv.lang == "zh" %}个人优势{% else %}Introduction{% endif %}</div>
                     {% for c in cv.introduction %}
                     <div class="content"><span class="ititle">{{ c.title }}</span>{{ c.content }}</div>
                     {% endfor %}
