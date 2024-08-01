@@ -1,21 +1,21 @@
 - lang: "zh"
   name: "唐隆斌"
-  motivation: "无人驾驶规控/感知工程师"
-  photo: "/assets/img/longbin_portrait.jpg"
+  motivation: "规控算法工程师"
+  photo: "/assets/img/longbin_portrait.jpeg"
   email: "longbin@u.nus.edu"
   github: "tanglongbin"
   linkedin: "tanglongbin"
   website: "https://longbin.tech"
   languages:
-    - idiom: "中文"
-    - idiom: "英语(IELTS 6.5)"
+    - idiom: "中文（母语）"
+    - idiom: "英语 (IELTS 6.5) "
   educations:
     - degree: "本科-自动化"
       university: "哈尔滨工业大学（深圳）"
       time: "2020-2024"
-    - degree: "联合培养-电子计算机工程"
-      university: "新加坡国立大学（苏州）研究院"
-      time: "2023-2024"
+    - degree: "硕士-电子计算机工程"
+      university: "新加坡国立大学"
+      time: "2024-至今"
   skills:
     - title: "编程技能"
       skill: 
@@ -82,41 +82,48 @@
     - title: "竞赛/项目经历"
       content: "参与的竞赛与项目均获得不错的成绩，同时在各个团队中担任主要角色，负责技术把控与进度安排。2022-2023 担任 HITSZ-VEX 机器人队负责人一职，主要参与机械设计与程序开发。同时作为 HITSZ-OpenAuto 开源项目的主要维护者，参与了多个校内外开源项目的维护工作。"
 - lang: "en"
-  name: "Zhuge Liang"
-  motivation: "Cloud Computing Developer"
-  photo: "/assets/img/h3.webp"
+  name: "Longbin Tang"
+  motivation: "Planning and Control Algorithm Engineer"
+  photo: "/assets/img/longbin_portrait.jpeg"
   email: "longbin@u.nus.edu"
   github: "tanglongbin"
   linkedin: "tanglongbin"
   website: "https://longbin.tech"
   languages:
-    - idiom: "Chinese"
-    - idiom: "Minnan"
+    - idiom: "Chinese (Native)"
+    - idiom: "English (IELTS 6.5)"
   educations:
-    - degree: "Bachelor-Computer Science"
-      university: "Wolong University"
-      time: "2012-2016"
-    - degree: "Master-Computer Science"
-      university: "Wolong University"
-      time: "2016-2019"
-    - degree: "Doctor-Computer Science"
-      university: "Wolong University"
-      time: "2019-Now"
+    - degree: "Bachelor-Automation"
+      university: "Harbin Institute of Technology, Shenzhen"
+      time: "2020-2024"
+    - degree: "Master-Electical and Computer Engineering"
+      university: "National University of Singapore"
+      time: "2024-Now"
   skills:
-    - title: "Backend Skills"
+    - title: "Programming Skill"
       skill: 
-        - Go
+        - C/C++
         - Python
-        - PHP
-        - NodeJS
-    - title: "Frontend Skills"
+        - Matlab/Simulink
+        - Markdown/Latex
+    - title: "Robotics Skill"
       skill: 
-        - HTML/CSS/JS
-        - VueJS
-    - title: "DevOps Skills"
-      skill: 
-        - Docker
-        - KVM
+        - ROS/ROS2
+        - SLAM/Sensor-Fusion
+        - OpenCV/Halcon
+    - title: "3D Design"
+      skill:
+        - SolidWorks
+        - AutoCAD
+        - Bambu Studio
+    - title: "Main Courses"
+      skill:
+        - Modern Control Theory
+        - Signal Analysis and Processing
+        - Data Structure and Algorithm
+        - Digital Image Processing
+        - Digital/Analogy Electronic Technology
+        - Fundamentals of Mechanical Desgin
   experience:
     - role: "Three Kingdoms"
       company: "Research"
@@ -134,10 +141,13 @@
       details: "Mainly responsible for formulating ideas and plans for capturing Meng Huo, seven captures and seven verticals finally subdued Meng Huo."
       tech: "Techs: HTML/CSS/JS, AMAP, REST API"
   honors:
-    - Award of Wolong University Outstanding Graduates, 2019
-    - Award of Wolong University President cholarship, 2016
-    - Award of Wolong University Outstanding Graduates, 2016
-    - Graduate Scholarship, 2012~Now/every year
+    - 2021 ACM-ICPC Shaanxi National Invitational Sliver
+    - 2021 哈尔滨工业大学（深圳）程序设计大赛 二等奖
+    - 2021~2023 哈尔滨工业大学（深圳）学业奖学金 优秀模范学生
+    - 2022 VEXU 亚洲机器人锦标赛 冠军
+    - 2022 BOTEC 国际智能机器人技术挑战赛 二等奖
+    - 2022 中国机器人及人工智能大赛 一等奖
+    - 2023 中国高校智能机器人创意大赛 二等奖
   publications:
     - "<b>Zhuge Liang</b>, Guan Yu, Zhang Fei, Zhao Yun, Liu Bei*. 'The necessity of going out Qishan for serveral times'. SGZL, 2021(1):110-118."
     - "<b>Zhuge Liang</b>, Zhou Yu, Guan Yu, Huang Gai, Lu Su, Sun Quan*, Liu Bei*. 'Why the union of Shu and Wu is good'. SGZB, 2020(1):110-118."
