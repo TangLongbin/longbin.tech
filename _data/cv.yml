@@ -156,8 +156,8 @@
     # - "<b>Zhuge Liang</b>, Zhou Yu, Xun Yu, Cao Cao*, Sun Quan*, Liu Bei*. 'Romance of the three Kingdoms'. SGZR, 2022(1):110-118."
   patents:
     - "<b>Tang Longbin</b>, Wang Rui, He Ming, Liu Nengfeng, A Differential Steering Wheel and Vehicle, Publication No. CN117104334A"
-  introduction:
-    - title: "Knowledge/Skills"
-      content: "Proficient in multidisciplinary knowledge including mechanics, electrical engineering, control, and computer science. Strong computer skills and robotic perception and control abilities. Actively participated in numerous competitions and projects."
-    - title: "Competitions/Projects Experience"
-      content: "2022-2023: Served as the leader of the HITSZ-VEX Robotics Team, involved in mechanical design and software development; Principal maintainer of the HITSZ-OpenAuto open-source project."
+  # introduction:
+  #   - title: "Knowledge/Skills"
+  #     content: “Skilled in mechanics, electrical engineering, control, and computer science. Strong in computer and robotic perception/control. Actively involved in various competitions and projects.”
+  #   - title: "Competitions/Projects Experience"
+  #     content: "2022-2023: Served as the leader of the HITSZ-VEX Robotics Team, involved in mechanical design and software development; Principal maintainer of the HITSZ-OpenAuto open-source project."
