@@ -45,8 +45,8 @@
     - role: "感知算法实习生"
       company: "GalaXea AI"
       time: "2024.2 - 2024.6"
-      details: "负责无人车感知数据的生成、处理以及方案设计与优化。参与基于 LiDAR 监督的 3D Occupancy 感知模型训练，同时协助进行路径规划算法（基于深度学习）的测试与优化工作。"
-      tech: "技术：NLP，Python，BPE，N-Gram，Skip-Gram"
+      details: "负责无人车感知数据的生成、处理以及方案设计与优化。参与基于 LiDAR 监督的 3D Occupancy 感知模型训练，同时协助进行路径规划算法（基于深度学习）的测试与优化工作，协助机械臂控制算法调试与遥操作开发。"
+      tech: "技术：3D Occupancy，SLAM，ROS，Python，Docker"
     - role: "Autonomous Vehicle for mail and parcel delivery"
       company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
       time: "2023.10 - 2024.6"
@@ -70,8 +70,8 @@
     - 2022 BOTEC 国际智能机器人技术挑战赛 二等奖
     - 2022 中国机器人及人工智能大赛 一等奖
     - 2023 中国高校智能机器人创意大赛 二等奖
-  # publications:
-  #   - "<b>诸葛亮</b>, 关羽, 张飞, 赵云, 刘备*. 《七出岐山的必要性》. 三国志快报, 2021(1):110-118."
+  publications:
+    - "<b>LB Tang</b>, J Guo, RY Lei, YC Liang, QL Bu, J Sun*. 'Autonomous Delivery Vehicle System Based On Multi-Sensor Data Fusion And Autoware.universe'. ICRAE, Processing."
   #   - "<b>诸葛亮</b>, 周瑜, 关羽, 黄盖, 鲁肃, 孙权*, 刘备*. 《吴蜀联盟为什么行》. 三国志简报, 2020(1):110-118."
   #   - "<b>诸葛亮</b>, 周瑜, 荀彧, 曹操*, 孙权*, 刘备*. 《三个国家的浪漫史》. 三国志综述, 2022(1):110-118."
   patents:
