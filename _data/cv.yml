@@ -126,27 +126,26 @@
   - role: "Perception Algorithm Intern"
     company: "GalaXea AI"
     time: "2024.2 - 2024.6"
-    details: "Responsible for the generation, processing, and optimization of autonomous vehicle perception data, as well as the design and improvement of related solutions. Participated in the training of 3D Occupancy perception models supervised by LiDAR and assisted in the testing and optimization of path planning algorithms based on deep learning. Also assisted in debugging robotic arm control algorithms and developing teleoperation capabilities."
+    details: "Handled autonomous vehicle perception data generation, processing, and optimization. Worked on 3D Occupancy perception models supervised by LiDAR, tested and optimized deep learning-based path planning algorithms, and assisted with robotic arm control and teleoperation development."
     tech: "Techs: 3D Occupancy, SLAM, ROS, Python, Docker"
   - role: "Autonomous Vehicle for Mail and Parcel Delivery"
     company: "NUSRI & XJTLU"
     time: "2023.10 - 2024.6"
-    details: "Designed an autonomous vehicle capable of navigation and delivery within campuses (e.g., schools, parks). The vehicle uses a six-wheel differential structure chassis with double-wishbone independent suspension, achieving zero turning radius and stable delivery. Using the Autoware.universe architecture and 'Lidar-IMU-Odometer-GPS-Radar' multi-sensor integration, the vehicle performs SLAM, point cloud segmentation, path planning, and motion control. Deep reinforcement learning was employed for local path planning suitable for the complex three-dimensional surfaces of campuses."
+    details: “Designed an autonomous vehicle for campus navigation and delivery using a six-wheel differential chassis with double-wishbone suspension for zero turning radius and stable delivery. Integrated ‘Lidar-IMU-Odometer-GPS-Radar’ sensors with Autoware.universe for SLAM, point cloud segmentation, path planning, and motion control. Employed deep reinforcement learning for local path planning on complex campus surfaces.”
     tech: "Techs: SLAM, ROS2, C/C++, Python, LQR/MPC, Reinforcement Learning"
   - role: "Binocular Vision-Based Drug Delivery Autonomous Vehicle"
     company: "Harbin Institute of Technology (Shenzhen)"
     time: "2022.9 - 2022.12"
-    details: "Developed a system for indoor drug type recognition and autonomous delivery. Used binocular cameras to perceive the environment, extract lane features, and recognize landmarks, enabling pose estimation during delivery. Based on the drug type detected by the camera, the system automatically determined the delivery destination and completed the unmanned delivery and return."
+    details: “Developed an indoor drug recognition and delivery system using binocular cameras for environment perception, lane feature extraction, and landmark recognition. The system automatically determined delivery destinations and completed unmanned delivery and return based on the detected drug type.”
     tech: "Techs: Python, C/C++, ROS, OpenCV, Object Detection"
   - role: "Automatic Parking Car (Outstanding Project)"
     company: "Harbin Institute of Technology (Shenzhen)"
     time: "2021.1 - 2021.12"
-    details: "Implemented parking space measurement and vehicle relative pose estimation using low-cost sensors. During vehicle movement, an ultrasonic distance sensor was used to measure parking spaces, with the results integrated to obtain parking information and simultaneously locate the vehicle's relative pose. Real-time calculation of parking paths enabled different types of parking."
+    details: “Used low-cost sensors to measure parking spaces and estimate vehicle pose. An ultrasonic sensor measured parking spaces, integrated the data for parking information, and located the vehicle’s pose. Enabled real-time parking path calculation for various parking types.”
     tech: "Techs: Python, Linux, PID, Bus Communication"
   honors:
     - 2021 ACM-ICPC Shaanxi National Invitational Sliver
     - 2021 HITSZ Programming Contest Second Prize
-    - 2021~2023 HITSZ Excellent Student
     - 2022 VEXU Asia Robotics Championship Champion
     - 2022 BOTEC Second Prize
     - 2022 CRAIC First Prize
