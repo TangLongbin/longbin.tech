@@ -94,9 +94,9 @@
     - idiom: "English (IELTS 6.5)"
   educations:
     - degree: "Bachelor-Automation"
-      university: "Harbin Institute of Technology, Shenzhen"
+      university: "Harbin Institute of Technology"
       time: "2020-2024"
-    - degree: "Master-Electical and Computer Engineering"
+    - degree: "Master-Electical Engineering"
       university: "National University of Singapore"
       time: "2024-Now"
   skills:
@@ -122,8 +122,7 @@
         - Signal Analysis and Processing
         - Data Structure and Algorithm
         - Digital Image Processing
-        - Digital/Analogy Electronic Technology
-        - Fundamentals of Mechanical Desgin
+        - Mechanical Desgin
   experience:
     - role: "Three Kingdoms"
       company: "Research"
