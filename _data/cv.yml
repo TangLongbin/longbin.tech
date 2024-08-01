@@ -1,6 +1,6 @@
 - lang: "zh"
   name: "唐隆斌"
-  motivation: "规控算法工程师"
+  motivation: "~"
   photo: "/assets/img/longbin_portrait.jpeg"
   email: "longbin@u.nus.edu"
   github: "tanglongbin"
@@ -82,7 +82,7 @@
       content: "2022-2023 担任 HITSZ-VEX 机器人队负责人一职，参与机械设计与程序开发；HITSZ-OpenAuto 开源项目的主要维护者"
 - lang: "en"
   name: "Longbin Tang"
-  motivation: "Planning and Control Algorithm Engineer"
+  motivation: "~"
   photo: "/assets/img/longbin_portrait.jpeg"
   email: "longbin@u.nus.edu"
   github: "tanglongbin"
@@ -104,7 +104,7 @@
         - C/C++
         - Python
         - Matlab/Simulink
-        - Markdown/Latex
+        - Markdown/LaTex
     - title: "Robotics Skill"
       skill: 
         - ROS/ROS2
@@ -123,21 +123,26 @@
         - Digital Image Processing
         - Mechanical Desgin
   experience:
-    - role: "Three Kingdoms"
-      company: "Research"
-      time: "2017.10 - 2019.6"
-      details: "Analyze the internal and external factors of the three kingdoms of Wu, Shu and Wei, and predict the development trend of the three kingdoms in the future."
-      tech: "Techs: Python, Common ML algorithms (SVM, RF, DT, KNN)"
-    - role: "The union of Shu and Wu"
-      company: "Principal Researcher"
-      time: "2017.10 - 2019.6"
-      details: "Go to the Eastern Wu tongue to fight against the Confucian scholars, borrow the Dongfeng fire to burn the company camp, and borrow arrows from the thatched boat."
-      tech: "Techs: Linux, KVM, Docker, PHP, VueJS"
-    - role : "Seven Release of MengHuo"
-      company: "Principal Researcher"
-      time: "2018.6 - 2018.10"
-      details: "Mainly responsible for formulating ideas and plans for capturing Meng Huo, seven captures and seven verticals finally subdued Meng Huo."
-      tech: "Techs: HTML/CSS/JS, AMAP, REST API"
+  - role: "Perception Algorithm Intern"
+    company: "GalaXea AI"
+    time: "2024.2 - 2024.6"
+    details: "Responsible for the generation, processing, and optimization of autonomous vehicle perception data, as well as the design and improvement of related solutions. Participated in the training of 3D Occupancy perception models supervised by LiDAR and assisted in the testing and optimization of path planning algorithms based on deep learning. Also assisted in debugging robotic arm control algorithms and developing teleoperation capabilities."
+    tech: "Techs: 3D Occupancy, SLAM, ROS, Python, Docker"
+  - role: "Autonomous Vehicle for Mail and Parcel Delivery"
+    company: "NUSRI & XJTLU"
+    time: "2023.10 - 2024.6"
+    details: "Designed an autonomous vehicle capable of navigation and delivery within campuses (e.g., schools, parks). The vehicle uses a six-wheel differential structure chassis with double-wishbone independent suspension, achieving zero turning radius and stable delivery. Using the Autoware.universe architecture and 'Lidar-IMU-Odometer-GPS-Radar' multi-sensor integration, the vehicle performs SLAM, point cloud segmentation, path planning, and motion control. Deep reinforcement learning was employed for local path planning suitable for the complex three-dimensional surfaces of campuses."
+    tech: "Techs: SLAM, ROS2, C/C++, Python, LQR/MPC, Reinforcement Learning"
+  - role: "Binocular Vision-Based Drug Delivery Autonomous Vehicle"
+    company: "Harbin Institute of Technology (Shenzhen)"
+    time: "2022.9 - 2022.12"
+    details: "Developed a system for indoor drug type recognition and autonomous delivery. Used binocular cameras to perceive the environment, extract lane features, and recognize landmarks, enabling pose estimation during delivery. Based on the drug type detected by the camera, the system automatically determined the delivery destination and completed the unmanned delivery and return."
+    tech: "Techs: Python, C/C++, ROS, OpenCV, Object Detection"
+  - role: "Automatic Parking Car (Outstanding Project)"
+    company: "Harbin Institute of Technology (Shenzhen)"
+    time: "2021.1 - 2021.12"
+    details: "Implemented parking space measurement and vehicle relative pose estimation using low-cost sensors. During vehicle movement, an ultrasonic distance sensor was used to measure parking spaces, with the results integrated to obtain parking information and simultaneously locate the vehicle's relative pose. Real-time calculation of parking paths enabled different types of parking."
+    tech: "Techs: Python, Linux, PID, Bus Communication"
   honors:
     - 2021 ACM-ICPC Shaanxi National Invitational Sliver
     - 2021 HITSZ Programming Contest Second Prize
@@ -147,11 +152,13 @@
     - 2022 CRAIC First Prize
     - 2023 CUIRIC Second Prize
   publications:
-    - "<b>Zhuge Liang</b>, Guan Yu, Zhang Fei, Zhao Yun, Liu Bei*. 'The necessity of going out Qishan for serveral times'. SGZL, 2021(1):110-118."
-    - "<b>Zhuge Liang</b>, Zhou Yu, Guan Yu, Huang Gai, Lu Su, Sun Quan*, Liu Bei*. 'Why the union of Shu and Wu is good'. SGZB, 2020(1):110-118."
-    - "<b>Zhuge Liang</b>, Zhou Yu, Xun Yu, Cao Cao*, Sun Quan*, Liu Bei*. 'Romance of the three Kingdoms'. SGZR, 2022(1):110-118."
+    - "<b>LB Tang</b>, J Guo, RY Lei, YC Liang, QL Bu, J Sun*. 'Autonomous Delivery Vehicle System Based On Multi-Sensor Data Fusion And Autoware.universe'. ICRAE, Processing."
+    # - "<b>Zhuge Liang</b>, Zhou Yu, Guan Yu, Huang Gai, Lu Su, Sun Quan*, Liu Bei*. 'Why the union of Shu and Wu is good'. SGZB, 2020(1):110-118."
+    # - "<b>Zhuge Liang</b>, Zhou Yu, Xun Yu, Cao Cao*, Sun Quan*, Liu Bei*. 'Romance of the three Kingdoms'. SGZR, 2022(1):110-118."
+  patents:
+    - "<b>Tang Longbin</b>, Wang Rui, He Ming, Liu Nengfeng, A Differential Steering Wheel and Vehicle, Publication No. CN117104334A"
   introduction:
-    - title: "Researches"
-      content: "During the postgraduate period, he was mainly engaged in the research of the Three Kingdoms, and with my help, he developed the Wushu Alliance <sup>[2]</sup>; in the later period, he made a decision to go out of Qishan in response to the strength of the Wei State <sup>[1]</sup>; Cooperated with the principals of the Three Kingdoms to complete 'The Romance of the Three Kingdoms'<sup>[3]</sup>."
-    - title: "Projects"
-      content: "The elders established by Shu Han contributed to the development and strength of the Shu Kingdom. (The above content maybe faake for filling needs, please do not take it seriously!!!)"
+    - title: "Knowledge/Skills"
+      content: "Proficient in multidisciplinary knowledge including mechanics, electrical engineering, control, and computer science. Strong computer skills and robotic perception and control abilities. Actively participated in numerous competitions and projects."
+    - title: "Competitions/Projects Experience"
+      content: "2022-2023: Served as the leader of the HITSZ-VEX Robotics Team, involved in mechanical design and software development; Principal maintainer of the HITSZ-OpenAuto open-source project."
