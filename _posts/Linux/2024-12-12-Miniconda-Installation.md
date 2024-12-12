@@ -24,7 +24,7 @@ tags:
 sudo apt update
 sudo apt install -y curl
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash ~/Miniconda3-latest-Linux-x86_64.sh
+bash ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
 After running the above commands, you will be prompted to accept the license agreement.

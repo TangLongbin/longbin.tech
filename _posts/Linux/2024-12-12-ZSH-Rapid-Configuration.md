@@ -39,6 +39,10 @@ sudo vim ~/.zshrc
 
 Change the `ZSH_THEME` to your favorite theme. For example, `ZSH_THEME="random"`.
 
+Some popular themes:
+
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
 ## Plugins
 
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
