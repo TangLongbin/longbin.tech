@@ -5,7 +5,7 @@ subtitle: Tmux is "Terminal Multiplexer"
 category: Linux
 date: 2024-12-12
 author: Longbin
-cover: https://github.com/tmux/tmux/blob/master/logo/tmux-logo.svg
+cover: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tmux_logo.svg/180px-Tmux_logo.svg.png
 cover_author: tmux
 cover_author_link: https://github.com/tmux
 tags:
