@@ -109,7 +109,7 @@
       skill: 
         - ROS/ROS2
         - SLAM/Sensor-Fusion
-        - OpenCV/Halcon
+        - Isaac Sim
     - title: "3D Design"
       skill:
         - SolidWorks
@@ -117,17 +117,22 @@
         - Bambu Studio
     - title: "Main Courses"
       skill:
+        - Advanced Robotics
+        - Pattern Recognition
         - Modern Control Theory
-        - Signal Analysis and Processing
+        - Nerual Network/Deep Learning
         - Data Structure and Algorithm
-        - Digital Image Processing
-        - Mechanical Desgin
   experience:
   - role: "Perception Algorithm Intern"
     company: "GalaXea AI"
     time: "2024.2 - 2024.6"
     details: "Handled autonomous vehicle perception data generation, processing, and optimization. Worked on 3D Occupancy perception models supervised by LiDAR, tested and optimized deep learning-based path planning algorithms, and assisted with robotic arm control and teleoperation development."
     tech: "Techs: 3D Occupancy, SLAM, ROS, Python, Docker"
+  - role: "Agile Flight Traversing Dynamic Environment With Learning Based Planning and Control"
+    company: "National University of Singapore"
+    time: "2024.9 - Now"
+    details: “Enabled an FPV drone to navigate dynamic environments and reach targets safely using deep reinforcement learning and differentiable MPC. Developed a custom simulation platform in Isaac Sim with PX4 backend for efficient training and strong Sim2Real transfer, validated through successful indoor flight tests.”
+    tech: "Techs: Reinforcement Learning, MPC, Isaac Sim, UAV"
   - role: "Autonomous Vehicle for Mail and Parcel Delivery"
     company: "NUSRI & XJTLU"
     time: "2023.10 - 2024.6"
@@ -138,11 +143,6 @@
     time: "2022.9 - 2022.12"
     details: “Developed an indoor drug recognition and delivery system using binocular cameras for environment perception, lane feature extraction, and landmark recognition. The system automatically determined delivery destinations and completed unmanned delivery and return based on the detected drug type.”
     tech: "Techs: Python, C/C++, ROS, OpenCV, Object Detection"
-  - role: "Automatic Parking Car (Outstanding Project)"
-    company: "Harbin Institute of Technology (Shenzhen)"
-    time: "2021.1 - 2021.12"
-    details: “Used low-cost sensors to measure parking spaces and estimate vehicle pose. An ultrasonic sensor measured parking spaces, integrated the data for parking information, and located the vehicle’s pose. Enabled real-time parking path calculation for various parking types.”
-    tech: "Techs: Python, Linux, PID, Bus Communication"
   honors:
     - 2021 ACM-ICPC Shaanxi National Invitational Sliver
     - 2021 HITSZ Programming Contest Second Prize
