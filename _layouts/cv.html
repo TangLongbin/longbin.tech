@@ -24,16 +24,206 @@
     <link rel="bookmark" href="{{ site.favicon | prepend: site.baseurl }}" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
     <link rel="stylesheet" href="{{ "/assets/css/cv.min.css" | prepend: site.baseurl }}">
+    <style>
+        .contact-item a {
+            border-bottom: 1px solid currentColor;
+            text-decoration: none !important;
+        }
+        .skill a {
+            border-bottom: 1px solid currentColor;
+            text-decoration: none !important;
+        }
+        .open-source a {
+            border-bottom: 1px solid currentColor;
+            text-decoration: none !important;
+        }
+        .header-contact {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            line-height: 1.3;
+            text-align: center;
+        }
+        .header-contact .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 12px;
+            align-items: center;
+            justify-content: center;
+        }
+        .container header {
+            position: relative;
+            display: grid;
+            grid-template-columns: 2fr 5fr;
+            column-gap: 26px;
+            justify-content: initial;
+            align-items: center;
+        }
+        .container header .labels {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 20;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 0;
+        }
+        .container header .labels label {
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-color-cv);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+        }
+        .container header .title {
+            margin: 0;
+            line-height: 1.1;
+        }
+        .container[data-cv-lang="en"] header .title {
+            font-size: 32px;
+        }
+        .container .container-block {
+            padding-top: 10px;
+            column-gap: 26px;
+        }
+        .container .sidebar .education .education-item {
+            margin-bottom: 10px;
+        }
+        .header-contact .contact-item {
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        .header-contact .contact-item svg {
+            width: 14px;
+            height: 14px;
+            margin-right: 4px;
+        }
+        .container .sidebar .honors {
+            margin-bottom: 20px;
+        }
+        .container .sidebar .honors .title {
+            display: block;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--fg-color);
+            margin-top: 0;
+            text-transform: none;
+        }
+        .container .sidebar .honors .title::before,
+        .container .sidebar .honors .title::after {
+            content: none;
+        }
+        .container .sidebar .honors .honor {
+            margin-bottom: 8px;
+        }
+        .container .sidebar .honors .honor-name {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+        .container .sidebar .honors .honor-meta {
+            font-size: 13px;
+            line-height: 1.25;
+            color: var(--fg-color-light);
+        }
+        .container .sidebar .open-source {
+            margin-bottom: 20px;
+        }
+        .container .sidebar .open-source .title {
+            display: block;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--fg-color);
+            margin-top: 0;
+            text-transform: none;
+        }
+        .container .sidebar .open-source .project {
+            margin-bottom: 8px;
+        }
+        .container .sidebar .open-source .project-name {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.25;
+            color: var(--fg-color-body);
+        }
+        .container .sidebar .open-source .project-name a,
+        .container .sidebar .open-source .project-name span {
+            color: var(--fg-color-body);
+        }
+        .container .sidebar .open-source .project-meta {
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--fg-color-body);
+        }
+        @media print {
+            .container {
+                padding-top: 24px;
+            }
+            .container header .labels {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     {% assign cv_index = 1 %}
     {% for cv in site.data.cv %}
-    <div class="container">
+    <div class="container" data-cv-lang="{{ cv.lang }}">
         <header>
             <h1 class="title">{{ cv.name }}</h1>
-            {% if cv.motivation %}
-            <h3 class="motivation"><span class="mtitle">{% if cv.lang == "zh" %}期望岗位：{% else %} Job: {% endif %}</span>{{ cv.motivation }}</h3>
-            {% endif %}
+            <section class="header-contact">
+                <div class="contact-row">
+                {% if cv.email %}
+                <section class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:{{ cv.email }}">Email: {{ cv.email }}</a>
+                </section>
+                {% endif %}
+                {% if cv.phone %}
+                <section class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L7.91 9.73a16 16 0 0 0 6.36 6.36l1.29-1.29a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z"></path></svg>
+                    <a href="tel:{{ cv.phone }}">TEL: {{ cv.phone }}</a>
+                </section>
+                {% endif %}
+                </div>
+                <div class="contact-row">
+                {% if cv.google_scholar %}
+                <section class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v18a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v18a3 3 0 0 1 3-3h7z"></path></svg>
+                    <a href="{{ cv.google_scholar }}" target="_blank">Scholar</a>
+                </section>
+                {% endif %}
+                {% if cv.github %}
+                <section class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <a href="https://github.com/{{ cv.github }}" target="_blank">GitHub</a>
+                </section>
+                {% endif %}
+                {% if cv.linkedin %}
+                <section class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <a href="https://www.linkedin.com/in/{{ cv.linkedin }}" target="_blank">LinkedIn</a>
+                </section>
+                {% endif %}
+                {% if cv.website %}
+                <section class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <a href="{{ cv.website }}" target="_blank">Homepage: longbin.tech</a>
+                </section>
+                {% endif %}
+                </div>
+            </section>
             <div class="labels">
                 <input type="checkbox" id="switch" name="mode" class="toggle-dark">
                 <label for="switch">
@@ -50,44 +240,39 @@
         </header>
         <div class="container-block">
             <aside class="sidebar">
-                {% if cv.photo %}
-                <section class="photo">
-                    <img src="{{ cv.photo | prepend: site.baseurl }}" alt="">
-                </section>
-                {% endif %}
+                {% if false %}
                 <section class="contact">
                     <div class="title">{% if cv.lang == "zh" %}基本信息{% else %} CONTACT {% endif %}</div>
-                    {% if cv.email %}
+                    {% if cv.google_scholar %}
                     <section class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v18a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v18a3 3 0 0 1 3-3h7z"></path></svg>
+                        <a href="{{ cv.google_scholar }}" target="_blank">Google Scholar</a>
                     </section>
                     {% endif %}
                     {% if cv.github %}
                     <section class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        <a href="https://github.com/{{ cv.github }}" target="_blank">{{ cv.github }}</a>
+                        <a href="https://github.com/{{ cv.github }}" target="_blank">GitHub: TangLongbin</a>
                     </section>
                     {% endif %}
                     {% if cv.linkedin %}
                     <section class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        <a href="https://www.linkedin.com/in/{{ cv.linkedin }}" target="_blank">{{ cv.linkedin }}</a>
+                        <a href="https://www.linkedin.com/in/{{ cv.linkedin }}" target="_blank">LinkedIn: Longbin Tang</a>
                     </section>
                     {% endif %}
                     {% if cv.website %}
                     <section class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
+                        <a href="{{ cv.website }}" target="_blank">Homepage: longbin.tech</a>
                     </section>
                     {% endif %}
-                </section>
-                {% if cv.languages %}
-                <section class="languages">
-                    <div class="title">{% if cv.lang == "zh" %}语言能力{% else %} LANGUAGES {% endif %}</div>
-                    {% for language in cv.languages %}
-                    <div class="idiom">{{ language.idiom }}</div>
-                    {% endfor %}
+                    {% if cv.email %}
+                    <section class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:{{ cv.email }}">Email: {{ cv.email }}</a>
+                    </section>
+                    {% endif %}
                 </section>
                 {% endif %}
                 {% if cv.educations %}
@@ -95,11 +280,44 @@
                     <div class="title">{% if cv.lang == "zh" %}教育经历{% else %} EDUCATION {% endif %}</div>
                     {% for education in cv.educations %}
                     <div class="education-item">
-                        <div class="degree">{{ education.degree }}</div>
-                        <div class="university">{{ education.university }}</div>
+                        <div class="degree">{{ education.university }}</div>
+                        <div class="university">{{ education.degree }}</div>
                         <div class="time">{{ education.time }}</div>
                     </div>
                     {% endfor %}
+                </section>
+                {% endif %}
+                {% if cv.honors %}
+                <section class="honors">
+                    <div class="title">{% if cv.lang == "zh" %}奖项荣誉{% else %}Honors{% endif %}</div>
+                    <div class="honor-items">
+                        {% for honor in cv.honors %}
+                        <div class="honor">
+                            {% if honor.name %}
+                            <div class="honor-name">{{ honor.name }}</div>
+                            <div class="honor-meta">{{ honor.award }} · {{ honor.time }}</div>
+                            {% else %}
+                            <div class="honor-name">{{ honor }}</div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endif %}
+                {% if cv.open_source %}
+                <section class="open-source">
+                    <div class="title">{% if cv.lang == "zh" %}开源项目{% else %}Open Source{% endif %}</div>
+                    <div class="project-items">
+                        {% for project in cv.open_source %}
+                        <div class="project">
+                            <div class="project-name">
+                                <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+                                {% if project.stars %}<span> ({{ project.stars }})</span>{% endif %}
+                            </div>
+                            <div class="project-meta">{{ project.desc }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
                 </section>
                 {% endif %}
                 {% if cv.skills %}
@@ -112,12 +330,20 @@
                     {% endfor %}
                 </section>
                 {% endif %}
+                {% if cv.languages %}
+                <section class="languages">
+                    <div class="title">{% if cv.lang == "zh" %}语言能力{% else %} LANGUAGES {% endif %}</div>
+                    {% for language in cv.languages %}
+                    <div class="idiom">{{ language.idiom }}</div>
+                    {% endfor %}
+                </section>
+                {% endif %}
             </aside>
             <article>
-                {% if cv.experience %}
+                {% if cv.work_experience %}
                 <section class="experience">
-                    <h2 class="title">{% if cv.lang == "zh" %}实践和研究经历{% else %} Practices & Researches {% endif %}</h2>
-                    {% for e in cv.experience %}
+                    <h2 class="title">{% if cv.lang == "zh" %}工作经历{% else %} Work Experience {% endif %}</h2>
+                    {% for e in cv.work_experience %}
                     <div class="experience-item">
                         <div class="role"> {{ e.role }} </div>
                         <div class="company">
@@ -133,7 +359,26 @@
                     {% endfor %}
                 </section>
                 {% endif %}
-                {% if cv.honors %}
+                {% if cv.research_experience %}
+                <section class="experience">
+                    <h2 class="title">{% if cv.lang == "zh" %}项目和研究经历{% else %} Projects & Research {% endif %}</h2>
+                    {% for e in cv.research_experience %}
+                    <div class="experience-item">
+                        <div class="role"> {{ e.role }} </div>
+                        <div class="company">
+                            {{ e.company }} <span class="time">{{ e.time }}</span>
+                        </div>
+                        <div class="details">
+                            {{ e.details }}
+                        </div>
+                        <p class="technologies">
+                            {{ e.tech }}
+                        </p>
+                    </div>
+                    {% endfor %}
+                </section>
+                {% endif %}
+                {% if false and cv.honors %}
                 <section class="honors">
                     <div class="title">{% if cv.lang == "zh" %}奖项荣誉{% else %}Honors{% endif %}</div>
                     <div class="honor-items">
