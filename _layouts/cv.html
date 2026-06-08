@@ -37,6 +37,13 @@
             border-bottom: 1px solid currentColor;
             text-decoration: none !important;
         }
+        .container .experience .role a,
+        .container .experience .company a,
+        .container .experience .details a {
+            color: inherit;
+            border-bottom: 1px solid currentColor;
+            text-decoration: none !important;
+        }
         .header-contact {
             width: 100%;
             margin: 0;
@@ -61,6 +68,7 @@
             display: grid;
             grid-template-columns: 2fr 5fr;
             column-gap: 26px;
+            width: 92%;
             justify-content: initial;
             align-items: center;
         }
@@ -93,11 +101,43 @@
             font-size: 32px;
         }
         .container .container-block {
-            padding-top: 10px;
+            width: 92%;
+            padding: 8px 0 0;
+            padding-top: 8px;
             column-gap: 26px;
         }
+        .container .sidebar {
+            margin-top: 12px;
+        }
+        .container .sidebar .education,
+        .container .sidebar .honors,
+        .container .sidebar .open-source,
+        .container .sidebar .skills,
+        .container .sidebar .languages {
+            margin-bottom: 15px;
+        }
+        .container .sidebar .education .title,
+        .container .sidebar .honors .title,
+        .container .sidebar .open-source .title,
+        .container .sidebar .skills .title,
+        .container .sidebar .languages .title {
+            display: block;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--fg-color);
+            margin: 0 0 5px;
+            line-height: 1.25;
+            text-transform: none;
+        }
         .container .sidebar .education .education-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+        }
+        .container .sidebar .education .education-item .degree,
+        .container .sidebar .education .education-item .university,
+        .container .sidebar .education .education-item .time,
+        .container .sidebar .skills .skill,
+        .container .sidebar .languages .idiom {
+            line-height: 1.35;
         }
         .header-contact .contact-item {
             display: inline-flex;
@@ -109,23 +149,14 @@
             height: 14px;
             margin-right: 4px;
         }
-        .container .sidebar .honors {
-            margin-bottom: 20px;
-        }
         .container .sidebar .honors .title {
-            display: block;
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--fg-color);
-            margin-top: 0;
-            text-transform: none;
         }
         .container .sidebar .honors .title::before,
         .container .sidebar .honors .title::after {
             content: none;
         }
         .container .sidebar .honors .honor {
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
         .container .sidebar .honors .honor-name {
             font-size: 14px;
@@ -137,19 +168,10 @@
             line-height: 1.25;
             color: var(--fg-color-light);
         }
-        .container .sidebar .open-source {
-            margin-bottom: 20px;
-        }
         .container .sidebar .open-source .title {
-            display: block;
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--fg-color);
-            margin-top: 0;
-            text-transform: none;
         }
         .container .sidebar .open-source .project {
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
         .container .sidebar .open-source .project-name {
             font-size: 14px;
@@ -163,8 +185,66 @@
         }
         .container .sidebar .open-source .project-meta {
             font-size: 14px;
-            line-height: 1.4;
+            line-height: 1.35;
             color: var(--fg-color-body);
+        }
+        .container .sidebar .open-source .project-role {
+            font-size: 14px;
+            line-height: 1.35;
+            color: var(--fg-color-body);
+        }
+        .container .sidebar .skills .title {
+            margin-top: 9px;
+        }
+        .container .sidebar .skills .title:first-child {
+            margin-top: 0;
+        }
+        .container .experience .title,
+        .container .publications .title,
+        .container .introduction .title {
+            margin-top: 14px;
+            margin-bottom: 7px;
+            line-height: 1.2;
+        }
+        .container article > .experience:first-child .title {
+            margin-top: 10px;
+        }
+        .container .experience .experience-item {
+            margin-bottom: 7px;
+        }
+        .container .experience .experience-item:last-child {
+            margin-bottom: 0;
+        }
+        .container .experience .experience-item .role,
+        .container .experience .experience-item .company {
+            line-height: 1.25;
+        }
+        .container .experience .experience-item .details,
+        .container .experience .experience-item .technologies {
+            line-height: 1.42;
+        }
+        .container .experience .experience-item .technologies {
+            margin: 3px 0 6px;
+        }
+        .container .experience .details .detail-list {
+            margin: 3px 0 0;
+            padding-left: 18px;
+        }
+        .container .experience .details .detail-list li {
+            margin-bottom: 2px;
+        }
+        .container .experience .details .detail-list li:last-child {
+            margin-bottom: 0;
+        }
+        .container .publications .publications-item {
+            margin-bottom: 0;
+        }
+        .container .publications .publications-item li {
+            line-height: 1.35;
+            margin-bottom: 1px;
+        }
+        .container .publications .publications-item li:last-child {
+            margin-bottom: 0;
         }
         @media print {
             .container {
@@ -315,6 +395,7 @@
                                 {% if project.stars %}<span> ({{ project.stars }})</span>{% endif %}
                             </div>
                             <div class="project-meta">{{ project.desc }}</div>
+                            {% if project.role %}<div class="project-role">{{ project.role }}</div>{% endif %}
                         </div>
                         {% endfor %}
                     </div>
@@ -345,16 +426,18 @@
                     <h2 class="title">{% if cv.lang == "zh" %}工作经历{% else %} Work Experience {% endif %}</h2>
                     {% for e in cv.work_experience %}
                     <div class="experience-item">
-                        <div class="role"> {{ e.role }} </div>
+                        <div class="role"> {% if e.role_url %}<a href="{{ e.role_url }}" target="_blank">{{ e.role }}</a>{% else %}{{ e.role }}{% endif %} </div>
                         <div class="company">
-                            {{ e.company }} <span class="time">{{ e.time }}</span>
+                            {% if e.company_url %}<a href="{{ e.company_url }}" target="_blank">{{ e.company }}</a>{% else %}{{ e.company }}{% endif %} <span class="time">{{ e.time }}</span>
                         </div>
                         <div class="details">
                             {{ e.details }}
                         </div>
+                        {% if e.tech and e.tech != "" %}
                         <p class="technologies">
                             {{ e.tech }}
                         </p>
+                        {% endif %}
                     </div>
                     {% endfor %}
                 </section>
@@ -364,16 +447,18 @@
                     <h2 class="title">{% if cv.lang == "zh" %}项目和研究经历{% else %} Projects & Research {% endif %}</h2>
                     {% for e in cv.research_experience %}
                     <div class="experience-item">
-                        <div class="role"> {{ e.role }} </div>
+                        <div class="role"> {% if e.role_url %}<a href="{{ e.role_url }}" target="_blank">{{ e.role }}</a>{% else %}{{ e.role }}{% endif %} </div>
                         <div class="company">
-                            {{ e.company }} <span class="time">{{ e.time }}</span>
+                            {% if e.company_url %}<a href="{{ e.company_url }}" target="_blank">{{ e.company }}</a>{% else %}{{ e.company }}{% endif %} <span class="time">{{ e.time }}</span>
                         </div>
                         <div class="details">
                             {{ e.details }}
                         </div>
+                        {% if e.tech and e.tech != "" %}
                         <p class="technologies">
                             {{ e.tech }}
                         </p>
+                        {% endif %}
                     </div>
                     {% endfor %}
                 </section>

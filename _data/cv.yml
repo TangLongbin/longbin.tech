@@ -38,42 +38,54 @@
         - Deep Learning
         - Reinforcement Learning
         - 自动驾驶感知
-        - 机器人规划与控制
+        - 机器人规划/控制
+        - 多传感器融合/SLAM
+        - 机器人运动学/动力学
   open_source:
     - name: "HITSZ-OpenAuto"
       stars: "640+ stars"
       url: "https://github.com/HITSZ-OpenAuto"
+      role: "发起者/贡献者"
       desc: "哈工大深圳课程攻略共享计划"
     - name: "NavRL-Go2"
       stars: "9 stars"
       url: "https://github.com/TangLongbin/NavRL-Go2"
+      role: "作者"
       desc: "NavRL 导航实机部署"
     - name: "torchcontrol"
       stars: "4 stars"
       url: "https://github.com/TangLongbin/torchcontrol"
+      role: "作者"
       desc: "GPU 并行系统仿真与控制库"
   work_experience:
     - role: "感知算法工程师"
       company: "小马智行 Pony.ai"
+      company_url: "https://pony.ai"
       time: "2025.7 - 至今"
-      details: "负责自动驾驶感知算法的研发与迭代，参与多传感器感知系统中的目标检测、跟踪与场景理解模块优化。围绕真实道路数据进行问题分析、数据闭环、模型训练与效果评估，提升复杂交通场景下感知系统的鲁棒性与稳定性。"
-      tech: "技术：自动驾驶感知，多传感器融合，目标检测/跟踪，Python，C++，深度学习"
-    - role: "感知算法实习生"
+      details: '<ul class="detail-list"><li>参与 RoboTruck 多模态 BEV 感知基础模型研发，设计 latent-to-early BEV temporal fusion：将历史帧 BEV feature 对齐并残差融合到当前帧，替代高成本多帧点云拼接；优化 OHEM 类别采样，部分 AP 提升 10-30%，漏检/误检降低约 30-40%。</li><li>负责 RoboTruck trailer detection 优化，基于 LiDAR BEV regression 引入运动学先验、动态 ROI 与 Kalman Filter 后处理，并通过数据重采样、onboard C++ 部署和闭环验证，使整体角度误差降低约 12%。</li><li>优化点云障碍物合并模型，结合 PointNet/Transformer 与上游语义先验判断 polygon 合并关系，缓解目标过切分，提升 tracking/PNC 输入完整性。</li><li>重构多源 heuristic hint selection，统一 box、track 与 FCN polygon 表示选择，基于几何一致性和 ROI/车道关系，使 under/over-segmentation 问题整体降低约 10%。</li></ul>'
+      tech: "技术：BEV Perception，LiDAR-Camera Fusion，Transformer，C++/Python"
+    - role: "机器人算法实习生"
       company: "星海图 GalaXeaAI"
+      company_url: "https://galaxea-ai.com"
       time: "2024.2 - 2024.6"
-      details: "负责无人车感知数据的生成、处理以及方案设计与优化。参与基于 LiDAR 监督的 3D Occupancy 感知模型训练，同时协助进行路径规划算法（基于深度学习）的测试与优化工作，协助机械臂控制算法调试与遥操作开发。"
-      tech: "技术：3D Occupancy，SLAM，ROS，Python，Docker"
+      details: '<ul class="detail-list"><li>参与移动机器人 3D Semantic Occupancy 数据闭环，基于环视相机与 LiDAR SLAM 地图生成语义 OCC 监督，并完成数据清洗、点云修正与训练实验分析。</li><li>构建 2D-to-3D 自动标注流程，利用 SAM 生成语义 mask，经 IPM 投影与 OCC 连通块传播 3D 语义；开发 BEV 标注工具补充门框等困难类别。</li><li>参与移动机器人感知-规划-控制联调，部署 DL planner，调试四舵轮底盘运动学/控制，并基于 ROS2 与 VR 手柄实现机械臂 6D 遥操作原型。</li></ul>'
+      tech: "技术：3D OCC，Auto Labeling，LiDAR SLAM，DL Planner，ROS2/Kinematics"
   research_experience:
-    - role: "Agile Flight Traversing Dynamic Environment With Learning Based Planning and Control"
-      company: "新加坡国立大学"
-      time: "2024.9 - 2025.4"
-      details: "通过深度强化学习和可微分 MPC，实现 FPV 无人机在高速状态下穿越多个动态物体，并安全到达目标点。在Isaac Sim中搭建自定义无人机仿真平台，并部署 PX4 后端以实现高效且真实的并行训练，确保优秀的 Sim2Real 迁移效果。最终在室内动捕环境中完成实际飞行测试，成功实现无人机在不同初始状态下穿越动态环境的任务。"
-      tech: "技术：深度强化学习、MPC、Isaac Sim、无人机 (UAV)"
+    - role: "Robotics Planning and Learning Research"
+      company: '新加坡国立大学 | <a href="https://sites.google.com/view/lzhao/join-core-lab" target="_blank">CORE Lab</a> | <a href="https://sites.google.com/view/lzhao" target="_blank">Lin Zhao</a>'
+      time: "2024.9 - 2025.6"
+      details: '<ul class="detail-list"><li>Learning Agile Gate Traversal：参与 NN 自适应调参的可微 MPC 控制框架，构建 Isaac Sim/Lab 窄门与动态扰动实验，产出 <b>IROS 2026</b> 论文。</li><li>AERO-MPPI：参与 LiDAR anchor-guided ensemble MPPI 规划控制，搭建 ODE 求解器、无人机动力学与仿真评估环境，产出 <b>ICRA 2026</b> 论文。</li><li>MacroNav：参与轻量上下文编码器与 graph-RL 导航策略设计，推进未知环境真实部署与实验分析，产出 <b>RA-L 2026</b> 论文。</li></ul>'
+      tech: ""
     - role: "Autonomous Vehicle for mail and parcel delivery"
-      company: "新加坡国立大学（苏州）研究院 & 西交利物浦大学"
+      company: '新加坡国立大学（苏州）研究院 | 西交利物浦大学 | <a href="https://www.xjtlu-ttc.com/expert/13" target="_blank">Jie Sun</a>'
       time: "2023.10 - 2024.6"
-      details: "设计一辆能够在园区（例如学校、公园）内的自主导航与配送的无人车。底盘采用六轮差速结构，配备双叉臂独立悬架，实现零转弯半径与稳定配送。采用 Autoware.universe 架构，“Lidar-IMU-Odometer-GPS-Radar”多传感器实现 SLAM、点云分割、路径规划与运动控制，并利用深度强化学习实现更适合园区复杂三维路面的局部路径规划。"
-      tech: "技术：SLAM，ROS2，C/C++，Python，LQR/MPC，Reinforcement Learning"
+      details: "从零搭建园区无人配送车系统，负责六轮差速底盘设计、装配与驱动开发，接入 Autoware.universe 多传感器链路；实现 SLAM 建图定位、点云分割、路径规划与底盘控制，产出 <b>IRAC 2024</b> 论文及发明专利。"
+      tech: ""
+    - role: "HITSZ VEX 机器人队队长"
+      company: "哈尔滨工业大学（深圳）VEXU Robotics Team"
+      time: "2022.1 - 2023.6"
+      details: '从零组建并负责校 VEX 机器人队，兼任机械设计与程序开发；完成底盘运动学建模、系统辨识、LQR 控制、路径规划与遥控映射，带队获得区域赛前三、国赛第二、<a href="https://www.hitsz.edu.cn/news/2022/1228/c6a10246/page.htm" target="_blank">VEXU 亚洲冠军</a>、世界赛八强等成绩。'
+      tech: ""
   honors:
     - name: "ACM-ICPC 全国邀请赛"
       award: "银牌"
@@ -90,10 +102,13 @@
     - name: "BOTEC 国际智能机器人技术挑战赛"
       award: "二等奖"
       time: "2022"
+    - name: "哈尔滨工业大学（深圳）奖学金"
+      award: "二等奖"
+      time: "2021, 2022"
   publications:
     - 'Kuankuan Sima, <b>Longbin Tang</b>, Zhenyu Yang, Haozhe Ma, Lin Zhao. <a href="https://arxiv.org/abs/2511.04320" target="_blank">MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments</a>. <b>RA-L 2026</b>.'
     - 'Xin Chen, Rui Huang, <b>Longbin Tang</b>, Lin Zhao. <a href="https://arxiv.org/abs/2509.17340" target="_blank">AERO-MPPI: Anchor-Guided Ensemble Trajectory Optimization for Agile Mapless Drone Navigation</a>. <b>ICRA 2026</b>.'
-    - 'Tianchen Sun, Bingheng Wang, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao. <a href="https://arxiv.org/abs/2508.21592" target="_blank">Learning Agile Gate Traversal via Analytical Optimal Policy Gradient</a>. <b>IROS 2026</b>.'
+    - 'Tianchen Sun, Bingheng Wang, Nuthasith Gerdpratoom, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao. <a href="https://arxiv.org/abs/2508.21592" target="_blank">Learning Agile Gate Traversal via Analytical Optimal Policy Gradient</a>. <b>IROS 2026</b>.'
     - 'Runyu Lei, <b>Longbin Tang</b>, Jiaxin Guo, Jie Sun, Qinglei Bu. <a href="https://doi.org/10.1109/IRAC63143.2024.10871795" target="_blank">Autonomous Delivery Vehicle System Based on Multi-Sensor Data Fusion</a>. <b>IRAC 2024</b>.'
   patents:
     - "<b>唐隆斌</b>, 王锐, 何铭, 刘能峰, 一种差分舵轮及小车, 公开号 CN117104334A"
@@ -143,42 +158,54 @@
         - Deep Learning
         - Reinforcement Learning
         - Autonomous Driving Perception
-        - Robot Planning & Control
+        - Robot Planning/Control
+        - Multi-sensor Fusion/SLAM
+        - Robot Kinematics/Dynamics
   open_source:
     - name: "HITSZ-OpenAuto"
       stars: "640+ stars"
       url: "https://github.com/HITSZ-OpenAuto"
+      role: "Founder/contributor"
       desc: "HITSZ Shenzhen course-sharing initiative"
     - name: "NavRL-Go2"
       stars: "9 stars"
       url: "https://github.com/TangLongbin/NavRL-Go2"
+      role: "Author"
       desc: "NavRL real-robot navigation deployment"
     - name: "torchcontrol"
       stars: "4 stars"
       url: "https://github.com/TangLongbin/torchcontrol"
+      role: "Author"
       desc: "GPU-parallel system simulation and control library"
   work_experience:
   - role: "Perception Algorithm Engineer"
     company: "Pony.ai"
+    company_url: "https://pony.ai"
     time: "2025.7 - Now"
-    details: "Develop autonomous driving perception algorithms, focusing on object detection, tracking, and scene understanding in multi-sensor perception systems. Work with real-world driving data for issue analysis, data-loop iteration, model training, and evaluation to improve perception robustness and stability in complex traffic scenarios."
-    tech: "Techs: Autonomous Driving Perception, Multi-Sensor Fusion, Object Detection/Tracking, Python, C++, Deep Learning"
-  - role: "Perception Algorithm Intern"
+    details: '<ul class="detail-list"><li>Contributed to a RoboTruck multi-modal BEV perception base model and designed latent-to-early BEV temporal fusion: aligning and residually fusing historical BEV features into current-frame features to replace expensive multi-frame point-cloud concatenation; optimized OHEM sampling, improving partial AP by 10-30% and reducing missing/false detections by ~30-40%.</li><li>Owned RoboTruck trailer detection optimization with LiDAR BEV regression, kinematic priors, dynamic ROI, and Kalman Filter post-processing; improved robustness through data resampling, onboard C++ deployment, and validation loops, reducing overall angle error by ~12%.</li><li>Improved point-cloud obstacle merging by combining PointNet/Transformer with upstream semantic priors to infer polygon merge relationships, mitigating over-splitting and improving tracking/PNC input completeness.</li><li>Refactored multi-source heuristic hint selection across box, track, and FCN polygon representations, using geometry consistency and ROI/lane relations to reduce under/over-segmentation issues by ~10%.</li></ul>'
+    tech: "Techs: BEV Perception, LiDAR-Camera Fusion, Transformer, C++/Python"
+  - role: "Robotics Algorithm Intern"
     company: "GalaXeaAI"
+    company_url: "https://galaxea-ai.com"
     time: "2024.2 - 2024.6"
-    details: "Handled autonomous vehicle perception data generation, processing, and optimization. Worked on 3D Occupancy perception models supervised by LiDAR, tested and optimized deep learning-based path planning algorithms, and assisted with robotic arm control and teleoperation development."
-    tech: "Techs: 3D Occupancy, SLAM, ROS, Python, Docker"
+    details: '<ul class="detail-list"><li>Contributed to the mobile robot 3D Semantic Occupancy data loop by generating semantic OCC supervision from surround-view cameras and LiDAR SLAM maps, covering data cleaning, point-cloud correction, and training analysis.</li><li>Built a 2D-to-3D auto-labeling workflow using SAM masks, IPM projection, and OCC connected components to propagate 3D semantics; developed a BEV annotation tool for hard classes such as door frames.</li><li>Supported mobile robot perception-planning-control integration by deploying a DL planner, tuning four-steering-wheel chassis kinematics/control, and prototyping ROS2-based 6D arm teleoperation with VR controllers.</li></ul>'
+    tech: "Techs: 3D OCC, Auto Labeling, LiDAR SLAM, DL Planner, ROS2/Kinematics"
   research_experience:
-  - role: "Agile Flight Traversing Dynamic Environment With Learning Based Planning and Control"
-    company: "National University of Singapore"
-    time: "2024.9 - 2025.4"
-    details: “Enabled an FPV drone to navigate dynamic environments and reach targets safely using deep reinforcement learning and differentiable MPC. Developed a custom simulation platform in Isaac Sim with PX4 backend for efficient training and strong Sim2Real transfer, validated through successful indoor flight tests.”
-    tech: "Techs: Reinforcement Learning, MPC, Isaac Sim, UAV"
+  - role: "Robotics Planning and Learning Research"
+    company: 'National University of Singapore | <a href="https://sites.google.com/view/lzhao/join-core-lab" target="_blank">CORE Lab</a> | <a href="https://sites.google.com/view/lzhao" target="_blank">Lin Zhao</a>'
+    time: "2024.9 - 2025.6"
+    details: '<ul class="detail-list"><li>Learning Agile Gate Traversal: contributed to an NN-adaptive differentiable MPC control framework and Isaac Sim/Lab gate-traversal/disturbance experiments, resulting in an <b>IROS 2026</b> paper.</li><li>AERO-MPPI: contributed to LiDAR anchor-guided ensemble MPPI planning/control, ODE solver, UAV dynamics, and simulation evaluation, resulting in an <b>ICRA 2026</b> paper.</li><li>MacroNav: worked on lightweight context encoding and graph-RL navigation policy design, real-world deployment validation, and experiment analysis, resulting in a <b>RA-L 2026</b> paper.</li></ul>'
+    tech: ""
   - role: "Autonomous Vehicle for Mail and Parcel Delivery"
-    company: "NUSRI & XJTLU"
+    company: 'NUSRI | XJTLU | <a href="https://www.xjtlu-ttc.com/expert/13" target="_blank">Jie Sun</a>'
     time: "2023.10 - 2024.6"
-    details: “Designed an autonomous vehicle for campus navigation and delivery using a six-wheel differential chassis with double-wishbone suspension for zero turning radius and stable delivery. Integrated ‘Lidar-IMU-Odometer-GPS-Radar’ sensors with Autoware.universe for SLAM, point cloud segmentation, path planning, and motion control. Employed deep reinforcement learning for local path planning on complex campus surfaces.”
-    tech: "Techs: SLAM, ROS2, C/C++, Python, LQR/MPC, Reinforcement Learning"
+    details: "Built an autonomous campus delivery vehicle from scratch, covering six-wheel differential chassis design, assembly, driver development, and Autoware.universe multi-sensor integration; implemented SLAM, point-cloud segmentation, planning, and chassis control, leading to an <b>IRAC 2024</b> paper and related patent."
+    tech: ""
+  - role: "HITSZ VEX Robotics Team Captain"
+    company: "Harbin Institute of Technology (Shenzhen) VEXU Robotics Team"
+    time: "2022.1 - 2023.6"
+    details: 'Founded and led the HITSZ VEX robotics team while owning mechanical design and software development; implemented chassis kinematics, system identification, LQR control, path planning, and teleop mapping, leading the team to regional top-3, national runner-up, <a href="https://www.hitsz.edu.cn/news/2022/1228/c6a10246/page.htm" target="_blank">VEXU Asia Champion</a>, and World Championship top-8 results.'
+    tech: ""
   honors:
     - name: "ACM-ICPC National Invitational"
       award: "Silver Medal"
@@ -195,10 +222,13 @@
     - name: "BOTEC International Intelligent Robotics Challenge"
       award: "Second Prize"
       time: "2022"
+    - name: "HIT Shenzhen Scholarship"
+      award: "Second Prize"
+      time: "2021, 2022"
   publications:
     - 'Kuankuan Sima, <b>Longbin Tang</b>, Zhenyu Yang, Haozhe Ma, Lin Zhao. <a href="https://arxiv.org/abs/2511.04320" target="_blank">MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments</a>. <b>RA-L 2026</b>.'
     - 'Xin Chen, Rui Huang, <b>Longbin Tang</b>, Lin Zhao. <a href="https://arxiv.org/abs/2509.17340" target="_blank">AERO-MPPI: Anchor-Guided Ensemble Trajectory Optimization for Agile Mapless Drone Navigation</a>. <b>ICRA 2026</b>.'
-    - 'Tianchen Sun, Bingheng Wang, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao. <a href="https://arxiv.org/abs/2508.21592" target="_blank">Learning Agile Gate Traversal via Analytical Optimal Policy Gradient</a>. <b>IROS 2026</b>.'
+    - 'Tianchen Sun, Bingheng Wang, Nuthasith Gerdpratoom, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao. <a href="https://arxiv.org/abs/2508.21592" target="_blank">Learning Agile Gate Traversal via Analytical Optimal Policy Gradient</a>. <b>IROS 2026</b>.'
     - 'Runyu Lei, <b>Longbin Tang</b>, Jiaxin Guo, Jie Sun, Qinglei Bu. <a href="https://doi.org/10.1109/IRAC63143.2024.10871795" target="_blank">Autonomous Delivery Vehicle System Based on Multi-Sensor Data Fusion</a>. <b>IRAC 2024</b>.'
   patents:
     - "<b>Tang Longbin</b>, Wang Rui, He Ming, Liu Nengfeng, A Differential Steering Wheel and Vehicle, Publication No. CN117104334A"
