@@ -41,6 +41,10 @@ jobs:
         run: gem install bundler -v 2.7.2
       - name: Install dependencies
         run: bundle _2.7.2_ install --jobs 4 --retry 3
+      - name: Update GitHub star counts
+        run: ruby scripts/update_github_stars.rb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

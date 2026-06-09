@@ -392,7 +392,8 @@
                         <div class="project">
                             <div class="project-name">
                                 <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
-                                {% if project.stars %}<span> ({{ project.stars }})</span>{% endif %}
+                                {% assign dynamic_stars = site.data.github_stars[project.name] | default: project.stars %}
+                                {% if dynamic_stars %}<span> ({{ dynamic_stars }})</span>{% endif %}
                             </div>
                             <div class="project-meta">{{ project.desc }}</div>
                             {% if project.role %}<div class="project-role">{{ project.role }}</div>{% endif %}

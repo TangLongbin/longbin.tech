@@ -7,5 +7,6 @@ Gemfile.lock
 .jekyll-cache
 
 _site
+_data/github_stars.yml
 
 *.gem
