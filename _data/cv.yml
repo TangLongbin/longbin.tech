@@ -8,6 +8,33 @@
   linkedin: "tanglongbin"
   google_scholar: "https://scholar.google.com/citations?user=PvDGQYYAAAAJ&hl=en&oi=ao"
   website: "https://longbin.tech"
+  homepage:
+    intro: '我是 <b>唐隆斌</b>，现任 <b><a href="https://pony.ai" target="_blank">小马智行 Pony.ai</a> 感知算法工程师</b>，主要关注 <b>自动驾驶感知、机器人规划与控制、多传感器融合</b>，以及学习方法在机器人系统中的应用。'
+    focus: '我的经历覆盖 <b>自动驾驶、移动机器人、无人机与无人配送车</b>，研究与工程成果涉及 3D Occupancy、导航规划、强化学习和机器人控制。'
+    research_highlight: '研究成果包括 <b>RA-L 2026、ICRA 2026、IRAC 2024</b> 论文，以及投稿 <b>IROS 2026</b> 的敏捷无人机控制研究。'
+    patent_highlight: '作为第一发明人提交两项机器人与无人驾驶相关发明专利申请，其中一项已公开。'
+    competition_highlight: '带领 VEXU 机器人队参加国内外赛事，获得 <a href="https://www.hitsz.edu.cn/news/2022/1228/c6a10246/page.htm" target="_blank">亚洲冠军</a>、世界赛八强等成绩。'
+    award_highlight: '获 <b>ACM-ICPC 全国邀请赛银牌</b>、<b>中国机器人及人工智能大赛一等奖</b>等奖项。'
+    experiences:
+      - title: "感知算法工程师"
+        organization: "小马智行 Pony.ai"
+        organization_url: "https://pony.ai"
+        summary: "从事 RoboTruck 自动驾驶感知算法研发。"
+      - title: "机器人算法实习生"
+        organization: "星海图 GalaXeaAI"
+        organization_url: "https://galaxea-ai.com"
+        summary: "参与移动机器人感知、规划与控制系统研发。"
+      - title: "硕士 · 电子计算机工程"
+        organization: "新加坡国立大学"
+        organization_url: "https://www.nus.edu.sg/"
+        summary: '在 <a href="https://sites.google.com/view/lzhao/join-core-lab" target="_blank">CORE Lab</a>、<a href="https://sites.google.com/view/lzhao" target="_blank">Lin Zhao</a> 指导下参与机器人规划、学习与导航研究。'
+      - title: "本科毕业设计"
+        organization: "新加坡国立大学（苏州）研究院、西交利物浦大学"
+        summary: '在 <a href="https://www.xjtlu-ttc.com/expert/13" target="_blank">Jie Sun</a> 指导下完成无人配送车项目。'
+      - title: "本科 · 自动化"
+        organization: "哈尔滨工业大学（深圳）"
+        organization_url: "https://www.hitsz.edu.cn/"
+        summary: '曾任 <a href="https://space.bilibili.com/3493271458285683" target="_blank">VEXU Robotics Team</a> 队长，负责团队建设、机器人设计与控制开发。'
   languages:
     - idiom: "中文（母语）"
     - idiom: "英语 (IELTS 6.5) "
@@ -106,13 +133,40 @@
       award: "二等奖"
       time: "2021, 2022"
   publications:
-    - 'Kuankuan Sima, <b>Longbin Tang</b>, Zhenyu Yang, Haozhe Ma, Lin Zhao. <a href="https://arxiv.org/abs/2511.04320" target="_blank">MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments</a>. <b>RA-L 2026</b>.'
-    - 'Xin Chen, Rui Huang, <b>Longbin Tang</b>, Lin Zhao. <a href="https://arxiv.org/abs/2509.17340" target="_blank">AERO-MPPI: Anchor-Guided Ensemble Trajectory Optimization for Agile Mapless Drone Navigation</a>. <b>ICRA 2026</b>.'
-    - 'Tianchen Sun, Bingheng Wang, Nuthasith Gerdpratoom, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao. <a href="https://arxiv.org/abs/2508.21592" target="_blank">Learning Agile Gate Traversal via Analytical Optimal Policy Gradient</a>. <b>IROS 2026</b>.'
-    - 'Runyu Lei, <b>Longbin Tang</b>, Jiaxin Guo, Jie Sun, Qinglei Bu. <a href="https://doi.org/10.1109/IRAC63143.2024.10871795" target="_blank">Autonomous Delivery Vehicle System Based on Multi-Sensor Data Fusion</a>. <b>IRAC 2024</b>.'
+    - authors: 'Kuankuan Sima, <b>Longbin Tang</b>, Zhenyu Yang, Haozhe Ma, Lin Zhao'
+      title: "MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments"
+      url: "https://arxiv.org/abs/2511.04320"
+      venue: "RA-L"
+      year: "2026"
+      status: "accepted"
+    - authors: 'Xin Chen, Rui Huang, <b>Longbin Tang</b>, Lin Zhao'
+      title: "AERO-MPPI: Anchor-Guided Ensemble Trajectory Optimization for Agile Mapless Drone Navigation"
+      url: "https://arxiv.org/abs/2509.17340"
+      venue: "ICRA"
+      year: "2026"
+      status: "accepted"
+    - authors: 'Tianchen Sun, Bingheng Wang, Nuthasith Gerdpratoom, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao'
+      title: "Learning Agile Gate Traversal via Analytical Optimal Policy Gradient"
+      url: "https://arxiv.org/abs/2508.21592"
+      venue: "IROS"
+      year: "2026"
+      status: "submitted"
+    - authors: 'Runyu Lei, <b>Longbin Tang</b>, Jiaxin Guo, Jie Sun, Qinglei Bu'
+      title: "Autonomous Delivery Vehicle System Based on Multi-Sensor Data Fusion"
+      url: "https://doi.org/10.1109/IRAC63143.2024.10871795"
+      venue: "IRAC"
+      year: "2024"
+      status: "published"
   patents:
-    - "<b>唐隆斌</b>, 王锐, 何铭, 刘能峰, 一种差分舵轮及小车, 公开号 CN117104334A"
-    - "<b>唐隆斌</b>, 郭佳鑫, 雷润宇, 卜庆雷, 孙捷, 一种无人驾驶车辆的车轮控制方法以及装置"
+    - inventors: "<b>唐隆斌</b>, 王锐, 何铭, 刘能峰"
+      title: "一种差分舵轮及小车"
+      publication_no: "CN117104334A"
+      status: "application_published"
+      first_inventor: true
+    - inventors: "<b>唐隆斌</b>, 郭佳鑫, 雷润宇, 卜庆雷, 孙捷"
+      title: "一种无人驾驶车辆的车轮控制方法以及装置"
+      status: "application"
+      first_inventor: true
   # introduction:
   #   - title: "知识/技能面"
   #     content: "掌握机械、电气、控制和计算机等多学科知识，不错的计算机能力与机器人感知控制技能，积极参与众多竞赛与项目。"
@@ -128,6 +182,33 @@
   linkedin: "tanglongbin"
   google_scholar: "https://scholar.google.com/citations?user=PvDGQYYAAAAJ&hl=en&oi=ao"
   website: "https://longbin.tech"
+  homepage:
+    intro: 'I am <b>Longbin Tang</b>, a <b>Perception Algorithm Engineer at <a href="https://pony.ai" target="_blank">Pony.ai</a></b>. My interests span <b>autonomous driving perception, robot planning and control, multi-sensor fusion</b>, and learning-based methods for robotic systems.'
+    focus: 'My experience covers <b>autonomous vehicles, mobile robots, UAVs, and autonomous delivery systems</b>, with research and engineering work involving 3D occupancy, navigation, reinforcement learning, and robot control.'
+    research_highlight: 'My research includes papers at <b>RA-L 2026, ICRA 2026, and IRAC 2024</b>, alongside agile UAV control research submitted to <b>IROS 2026</b>.'
+    patent_highlight: 'First-named inventor on two robotics and autonomous-driving invention patent applications, including one published application.'
+    competition_highlight: 'Led the VEXU robotics team to an <a href="https://www.hitsz.edu.cn/news/2022/1228/c6a10246/page.htm" target="_blank">Asia Championship</a> and a top-8 finish at the World Championship.'
+    award_highlight: 'Received an <b>ACM-ICPC National Invitational Silver Medal</b> and <b>First Prize at the China Robotics and Artificial Intelligence Competition</b>.'
+    experiences:
+      - title: "Perception Algorithm Engineer"
+        organization: "Pony.ai"
+        organization_url: "https://pony.ai"
+        summary: "Developing RoboTruck autonomous driving perception algorithms."
+      - title: "Robotics Algorithm Intern"
+        organization: "GalaXeaAI"
+        organization_url: "https://galaxea-ai.com"
+        summary: "Worked on mobile robot perception, planning, and control systems."
+      - title: "M.Sc. in Electrical and Computer Engineering"
+        organization: "National University of Singapore"
+        organization_url: "https://www.nus.edu.sg/"
+        summary: 'Conducted robotics planning, learning, and navigation research at the <a href="https://sites.google.com/view/lzhao/join-core-lab" target="_blank">CORE Lab</a> under <a href="https://sites.google.com/view/lzhao" target="_blank">Lin Zhao</a>.'
+      - title: "Undergraduate Capstone Project"
+        organization: "NUSRI and XJTLU"
+        summary: 'Developed an autonomous delivery vehicle project under <a href="https://www.xjtlu-ttc.com/expert/13" target="_blank">Jie Sun</a>.'
+      - title: "B.Eng. in Automation"
+        organization: "Harbin Institute of Technology (Shenzhen)"
+        organization_url: "https://www.hitsz.edu.cn/"
+        summary: 'Former captain of the <a href="https://space.bilibili.com/3493271458285683" target="_blank">VEXU Robotics Team</a>, responsible for team building, robot design, and control development.'
   languages:
     - idiom: "Chinese (Native)"
     - idiom: "English (IELTS 6.5)"
@@ -135,7 +216,7 @@
     - degree: "Master · Electrical and Computer Engineering"
       university: "National University of Singapore"
       time: "2024.8 - 2025.6"
-    - degree: "Bachelor Final Year Project"
+    - degree: "Undergraduate Capstone Project"
       university: "NUS Suzhou Research Institute"
       time: "2023.8 - 2024.6"
     - degree: "Summer School"
@@ -226,13 +307,40 @@
       award: "Second Prize"
       time: "2021, 2022"
   publications:
-    - 'Kuankuan Sima, <b>Longbin Tang</b>, Zhenyu Yang, Haozhe Ma, Lin Zhao. <a href="https://arxiv.org/abs/2511.04320" target="_blank">MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments</a>. <b>RA-L 2026</b>.'
-    - 'Xin Chen, Rui Huang, <b>Longbin Tang</b>, Lin Zhao. <a href="https://arxiv.org/abs/2509.17340" target="_blank">AERO-MPPI: Anchor-Guided Ensemble Trajectory Optimization for Agile Mapless Drone Navigation</a>. <b>ICRA 2026</b>.'
-    - 'Tianchen Sun, Bingheng Wang, Nuthasith Gerdpratoom, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao. <a href="https://arxiv.org/abs/2508.21592" target="_blank">Learning Agile Gate Traversal via Analytical Optimal Policy Gradient</a>. <b>IROS 2026</b>.'
-    - 'Runyu Lei, <b>Longbin Tang</b>, Jiaxin Guo, Jie Sun, Qinglei Bu. <a href="https://doi.org/10.1109/IRAC63143.2024.10871795" target="_blank">Autonomous Delivery Vehicle System Based on Multi-Sensor Data Fusion</a>. <b>IRAC 2024</b>.'
+    - authors: 'Kuankuan Sima, <b>Longbin Tang</b>, Zhenyu Yang, Haozhe Ma, Lin Zhao'
+      title: "MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments"
+      url: "https://arxiv.org/abs/2511.04320"
+      venue: "RA-L"
+      year: "2026"
+      status: "accepted"
+    - authors: 'Xin Chen, Rui Huang, <b>Longbin Tang</b>, Lin Zhao'
+      title: "AERO-MPPI: Anchor-Guided Ensemble Trajectory Optimization for Agile Mapless Drone Navigation"
+      url: "https://arxiv.org/abs/2509.17340"
+      venue: "ICRA"
+      year: "2026"
+      status: "accepted"
+    - authors: 'Tianchen Sun, Bingheng Wang, Nuthasith Gerdpratoom, <b>Longbin Tang</b>, Yichao Gao, Lin Zhao'
+      title: "Learning Agile Gate Traversal via Analytical Optimal Policy Gradient"
+      url: "https://arxiv.org/abs/2508.21592"
+      venue: "IROS"
+      year: "2026"
+      status: "submitted"
+    - authors: 'Runyu Lei, <b>Longbin Tang</b>, Jiaxin Guo, Jie Sun, Qinglei Bu'
+      title: "Autonomous Delivery Vehicle System Based on Multi-Sensor Data Fusion"
+      url: "https://doi.org/10.1109/IRAC63143.2024.10871795"
+      venue: "IRAC"
+      year: "2024"
+      status: "published"
   patents:
-    - "<b>Tang Longbin</b>, Wang Rui, He Ming, Liu Nengfeng, A Differential Steering Wheel and Vehicle, Publication No. CN117104334A"
-    - "<b>Tang Longbin</b>, Guo Jiaxin, Lei Runyu, Bu Qinglei, Sun Jie, A Wheel Control Method and Device for Autonomous Vehicles, patent application pending"
+    - inventors: "<b>Tang Longbin</b>, Wang Rui, He Ming, Liu Nengfeng"
+      title: "A Differential Steering Wheel and Vehicle"
+      publication_no: "CN117104334A"
+      status: "application_published"
+      first_inventor: true
+    - inventors: "<b>Tang Longbin</b>, Guo Jiaxin, Lei Runyu, Bu Qinglei, Sun Jie"
+      title: "A Wheel Control Method and Device for Autonomous Vehicles"
+      status: "application"
+      first_inventor: true
   # introduction:
   #   - title: "Knowledge/Skills"
   #     content: “Skilled in mechanics, electrical engineering, control, and computer science. Strong in computer and robotic perception/control. Actively involved in various competitions and projects.”

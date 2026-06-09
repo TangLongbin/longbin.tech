@@ -8,26 +8,60 @@ lang: "en"
 ---
 # Introduction
 
+{% assign cv = site.data.cv | where: "lang", "en" | first %}
+
 ## About me
 
-&emsp;&emsp; A student in HITSZ & NUSRI.
+{{ cv.homepage.intro }}
 
-## Information
+{{ cv.homepage.focus }}
 
-- Harbin Institute of Technology, Shenzhen, 2020, Bachelor of Automation
-- National University of Singapore 3+1+1 Programme -- ECE (Electrical and Computer Engineering)
-- HITSZ ACM 2020-2021 Member（2021 ACM-ICPC Shaanxi National Invitational -- Silver Medal）
-- [HITSZ-VEX](https://space.bilibili.com/3493271458285683) 2021-2022 Tipping Point & 2022-2023 Spin Up Leader（Coding at the same time）
-- [HITSZ-OpenAuto](https://github.com/HITSZ-OpenAuto) Initial Member
+## Education and Experience
 
-<!-- ## Publications
+<ul>
+{% for experience in cv.homepage.experiences %}
+  <li><b>{{ experience.title }} · {% if experience.organization_url %}<a href="{{ experience.organization_url }}" target="_blank">{{ experience.organization }}</a>{% else %}{{ experience.organization }}{% endif %}</b>: {{ experience.summary }}</li>
+{% endfor %}
+</ul>
 
-1. Publication 1 [[DOI]](https://doi.org)
-2. Publication 2 [[DOI]](https://doi.org) -->
+## Highlights
+
+- **Research**: {{ cv.homepage.research_highlight }}
+- **Patents**: {{ cv.homepage.patent_highlight }}
+- **Leadership and Competitions**: {{ cv.homepage.competition_highlight }}
+- **Awards**: {{ cv.homepage.award_highlight }}
+
+## Publications and Patents
+
+### Publications
+
+<ul>
+{% for publication in cv.publications %}
+  <li><b><a href="{{ publication.url }}" target="_blank">{{ publication.title }}</a></b>, {% if publication.status == "submitted" %}submitted to {% endif %}{{ publication.venue }} {{ publication.year }}</li>
+{% endfor %}
+</ul>
+
+### Invention Patents
+
+<ul>
+{% for patent in cv.patents %}
+  <li><b>{{ patent.title }}</b>, invention patent application{% if patent.publication_no %}, published as {{ patent.publication_no }}{% endif %}</li>
+{% endfor %}
+</ul>
+
+## Open Source
+
+<ul>
+{% for project in cv.open_source %}
+  {% assign dynamic_stars = site.data.github_stars[project.name] | default: project.stars %}
+  <li><b><a href="{{ project.url }}" target="_blank">{{ project.name }}</a>{% if dynamic_stars %} ({{ dynamic_stars }}){% endif %}</b>: {{ project.desc }}; {{ project.role }}.</li>
+{% endfor %}
+</ul>
 
 ## Contact
 
-- [Email](1982917081@qq.com)
-- [GitHub Pages](https://longbin.tech)
-- [Vercel](https://tanglongbin.vercel.app)
-- [Netlify](https://tanglongbin.netlify.app)
+- [Email: {{ cv.email }}](mailto:{{ cv.email }})
+- [GitHub](https://github.com/{{ cv.github }})
+- [Google Scholar]({{ cv.google_scholar }})
+- [LinkedIn](https://www.linkedin.com/in/{{ cv.linkedin }})
+- [Curriculum Vitae](/cv)

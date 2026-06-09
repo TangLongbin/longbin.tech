@@ -479,7 +479,7 @@
                     <div class="title">{% if cv.lang == "zh" %}论文发表{% else %}Publications{% endif %}</div>
                     <ol class="publications-item">
                         {% for p in cv.publications %}
-                        <li class="publication">{{ p }}</li>
+                        <li class="publication">{{ p.authors }}. <a href="{{ p.url }}" target="_blank">{{ p.title }}</a>. <b>{{ p.venue }} {{ p.year }}</b>.</li>
                         {% endfor %}
                     </ol>
                 </section>
@@ -487,9 +487,9 @@
                 {% if cv.patents %}
                 <section class="publications">
                     <div class="title">{% if cv.lang == "zh" %}专利成果{% else %}Patents{% endif %}</div>
-                    <ol class="publications-item"">
+                    <ol class="publications-item">
                         {% for p in cv.patents %}
-                        <li class="content">{{ p }}</li>
+                        <li class="content">{{ p.inventors }}, {{ p.title }}{% if p.publication_no %}, {% if cv.lang == "zh" %}公开号{% else %}Publication No.{% endif %} {{ p.publication_no }}{% endif %}</li>
                         {% endfor %}
                     </ol>
                 </section>

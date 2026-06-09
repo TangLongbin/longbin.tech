@@ -8,26 +8,60 @@ lang: "zh-Hans"
 ---
 # 个人介绍
 
+{% assign cv = site.data.cv | where: "lang", "zh" | first %}
+
 ## 关于我
 
-&emsp;&emsp; 哈尔滨工业大学（深圳） & 新加坡国立大学（苏州）研究院的在读大学生
+{{ cv.homepage.intro }}
 
-## 基本信息
+{{ cv.homepage.focus }}
 
-- 哈尔滨工业大学（深圳）20级本科 -- 自动化专业
-- 新加坡国立大学 3+1+1 项目 -- ECE (Electrical and Computer Engineering)
-- HITSZ ACM 2020-2021 队员（2021 ACM-ICPC Shaanxi National Invitational -- Silver Medal）
-- [HITSZ-VEX 南工麟云](https://space.bilibili.com/3493271458285683) 2021-2022赛季 & 2022-2023赛季 队长（兼任控制程序开发）
-- [HITSZ-OpenAuto](https://github.com/HITSZ-OpenAuto) 初始成员
+## 教育与经历
 
-<!-- ## 论文发表
+<ul>
+{% for experience in cv.homepage.experiences %}
+  <li><b>{{ experience.title }} · {% if experience.organization_url %}<a href="{{ experience.organization_url }}" target="_blank">{{ experience.organization }}</a>{% else %}{{ experience.organization }}{% endif %}</b>：{{ experience.summary }}</li>
+{% endfor %}
+</ul>
 
-1. 论文1 [[DOI]](https://doi.org)
-2. 论文2 [[DOI]](https://doi.org) -->
+## 代表成果
+
+- **学术研究**：{{ cv.homepage.research_highlight }}
+- **发明专利**：{{ cv.homepage.patent_highlight }}
+- **团队与竞赛**：{{ cv.homepage.competition_highlight }}
+- **个人奖项**：{{ cv.homepage.award_highlight }}
+
+## 论文与专利
+
+### 论文
+
+<ul>
+{% for publication in cv.publications %}
+  <li><b><a href="{{ publication.url }}" target="_blank">{{ publication.title }}</a></b>，{% if publication.status == "submitted" %}投稿 {% endif %}{{ publication.venue }} {{ publication.year }}</li>
+{% endfor %}
+</ul>
+
+### 发明专利
+
+<ul>
+{% for patent in cv.patents %}
+  <li><b>{{ patent.title }}</b>，发明专利申请{% if patent.publication_no %}，已公开（公开号 {{ patent.publication_no }}）{% endif %}</li>
+{% endfor %}
+</ul>
+
+## 开源项目
+
+<ul>
+{% for project in cv.open_source %}
+  {% assign dynamic_stars = site.data.github_stars[project.name] | default: project.stars %}
+  <li><b><a href="{{ project.url }}" target="_blank">{{ project.name }}</a>{% if dynamic_stars %}（{{ dynamic_stars }}）{% endif %}</b>：{{ project.desc }}，{{ project.role }}。</li>
+{% endfor %}
+</ul>
 
 ## 联系我
 
-- [邮箱](1982917081@qq.com)
-- [GitHub Pages](https://longbin.tech)
-- [Vercel](https://tanglongbin.vercel.app)
-- [Netlify](https://tanglongbin.netlify.app)
+- [Email：{{ cv.email }}](mailto:{{ cv.email }})
+- [GitHub](https://github.com/{{ cv.github }})
+- [Google Scholar]({{ cv.google_scholar }})
+- [LinkedIn](https://www.linkedin.com/in/{{ cv.linkedin }})
+- [个人简历](/cv)
