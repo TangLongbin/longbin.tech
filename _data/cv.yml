@@ -82,7 +82,7 @@
       details: "从零搭建园区无人配送车系统，负责六轮差速底盘设计、装配与驱动开发，接入 Autoware.universe 多传感器链路；实现 SLAM 建图定位、点云分割、路径规划与底盘控制，产出 <b>IRAC 2024</b> 论文及发明专利。"
       tech: ""
     - role: "HITSZ VEX 机器人队队长"
-      company: "哈尔滨工业大学（深圳）VEXU Robotics Team"
+      company: '哈尔滨工业大学（深圳）| <a href="https://space.bilibili.com/3493271458285683" target="_blank">VEXU Robotics Team</a>'
       time: "2022.1 - 2023.6"
       details: '从零组建并负责校 VEX 机器人队，兼任机械设计与程序开发；完成底盘运动学建模、系统辨识、LQR 控制、路径规划与遥控映射，带队获得区域赛前三、国赛第二、<a href="https://www.hitsz.edu.cn/news/2022/1228/c6a10246/page.htm" target="_blank">VEXU 亚洲冠军</a>、世界赛八强等成绩。'
       tech: ""
@@ -202,7 +202,7 @@
     details: "Built an autonomous campus delivery vehicle from scratch, covering six-wheel differential chassis design, assembly, driver development, and Autoware.universe multi-sensor integration; implemented SLAM, point-cloud segmentation, planning, and chassis control, leading to an <b>IRAC 2024</b> paper and related patent."
     tech: ""
   - role: "HITSZ VEX Robotics Team Captain"
-    company: "Harbin Institute of Technology (Shenzhen) VEXU Robotics Team"
+    company: 'Harbin Institute of Technology (Shenzhen) | <a href="https://space.bilibili.com/3493271458285683" target="_blank">VEXU Robotics Team</a>'
     time: "2022.1 - 2023.6"
     details: 'Founded and led the HITSZ VEX robotics team while owning mechanical design and software development; implemented chassis kinematics, system identification, LQR control, path planning, and teleop mapping, leading the team to regional top-3, national runner-up, <a href="https://www.hitsz.edu.cn/news/2022/1228/c6a10246/page.htm" target="_blank">VEXU Asia Champion</a>, and World Championship top-8 results.'
     tech: ""
